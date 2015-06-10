@@ -12,40 +12,37 @@
 #include <cstring>
 using namespace std;
 
-bool cmp(string a, string b) {
-	return a+b > b+a;
-}
 class Solution {
 public:
     /**
-     *@param num: A list of non negative integers
-     *@return: A string
+     * @param nums: A list of integers
+     * @return: The majority number
      */
-    
-    string largestNumber(vector<int> &nums) {
-        if (nums.size() == 0) return string("");
-
-        vector<string> strs(nums.size());
-        for (int i = 0; i < nums.size(); ++i) {
-        	stringstream ss;
-			ss<<nums[i];
-			ss>>strs[i];
+    // sort
+    // stack
+    // greedy
+    int majorityNumber(vector<int> nums) {
+        if (nums.size() == 0)
+            return 0;
+        int ans = nums[0];
+        int cnt = 1;
+        for (int i = 1; i < nums.size(); ++i) {
+            if (nums[i] == ans)
+                cnt++;
+            else {
+                cnt--;
+                if (cnt == 0) {
+                    ans = nums[i];
+                    cnt = 1;
+                }
+            }
         }
-        sort(strs.begin(), strs.end(), cmp);
-
-        string str;
-        for (int i = 0; i < strs.size(); ++i)
-        	str.append(strs[i]);
-        return str;
+        return ans;
     }
 };
 
 int main(int argc, char const *argv[]) {
 	Solution sol;
-	int a[] = {1, 20, 23, 4, 8};
-	vector<int> v;
-	for (int i = 0; i < sizeof(a)/sizeof(int); ++i) {
-        v.push_back(a[i]);
-    }
+
 	return 0;
 }
