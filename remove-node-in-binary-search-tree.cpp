@@ -27,8 +27,6 @@ public:
 
 class Solution {
 public:
-class Solution {
-public:
     /**
      * @param root: The root of the binary search tree.
      * @param value: Remove the node with given value.
