@@ -85,8 +85,12 @@ public:
 };
 
 int main(int argc, char const *argv[]) {
-
+    vector<int> v = {1,2,3};
+    int x;
+    cin >> x;
 	Solution sol;
-
+    for (int i = 0; i < 3; ++i) {
+        cout << v[i] << endl;
+    }
 	return 0;
 }
