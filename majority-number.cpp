@@ -42,7 +42,7 @@ public:
 };
 
 int main(int argc, char const *argv[]) {
-	Solution sol;
+    Solution sol;
 
-	return 0;
+    return 0;
 }
