@@ -12,20 +12,19 @@ using namespace std;
 class Solution {
 public:
     /**
-     * @param A: sorted integer array A which has m elements,
-     *           but size of A is m+n
-     * @param B: sorted integer array B which has n elements
-     * @return: void
+     * @param A and B: sorted integer array A and B.
+     * @return: A new sorted integer array
      */
-    void mergeSortedArray(int A[], int m, int B[], int n) {
-        int i = m-1, j = n-1;
-        for (int idx = m+n-1; idx >= 0; --idx) {
-            if (j < 0 || (i >= 0 && A[i] > B[j])) {
-                A[idx] = A[i--];
-            } else {
-                A[idx] = B[j--];
-            }
+    vector<int> mergeSortedArray(vector<int> &A, vector<int> &B) {
+        vector<int> retv;
+        int ia = 0, ib = 0;
+        while (ia < A.size() || ib < B.size()) {
+            if (ib == B.size() || (ia < A.size() && A[ia] <= B[ib]))
+                retv.push_back(A[ia++]);
+            else if (ia == A.size() || (ib < B.size() && A[ia] >= B[ib]))
+                retv.push_back(B[ib++]);
         }
+        return retv;
     }
 };
 
@@ -33,9 +32,9 @@ public:
 
 int main(int argc, char const *argv[]) {
 	Solution sol;
-    int A[5] = {1, 2, 3};
-    int B[2] = {4, 5};
-    sol.mergeSortedArray(A, 3, B, 2);
+    vector<int> A = {1, 2, 3};
+    vector<int> B = {4, 5};
+    A = sol.mergeSortedArray(A, B);
     for (int i = 0; i < 5; ++i)
     {
         cout << A[i] << endl;
