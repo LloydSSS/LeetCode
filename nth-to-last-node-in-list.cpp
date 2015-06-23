@@ -1,3 +1,5 @@
+// http://www.lintcode.com/en/problem/add-two-numbers/#
+// 注意链表长度小于n的情况
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -24,22 +26,27 @@ class Solution {
 public:
     /**
      * @param head: The first node of linked list.
-     * @return: True if it has a cycle, or false
+     * @param n: An integer.
+     * @return: Nth to last node of a singly linked list. 
      */
-    bool hasCycle(ListNode *head) {
-        ListNode *fast = head, *slow = head;
-        while (fast != NULL && fast->next != NULL) {
-            fast = fast->next->next;
+    ListNode *nthToLast(ListNode *head, int n) {
+        ListNode dummy(-1);
+        dummy.next = head;
+        ListNode *fast = &dummy;
+        ListNode *slow = &dummy;
+        for (int i = 0; i < n && fast != NULL; ++i)
+            fast = fast->next;
+        if (fast == NULL)
+            return NULL;
+        while (fast != NULL) {
+            fast = fast->next;
             slow = slow->next;
-            if (fast == slow)
-                return true;
         }
-        return false;
+        return slow;
     }
 };
 
 int main(int argc, char const *argv[]) {
-
 	Solution sol;
 
 	return 0;
