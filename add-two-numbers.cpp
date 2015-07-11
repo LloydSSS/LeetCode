@@ -1,33 +1,14 @@
 // http://www.lintcode.com/en/problem/add-two-numbers/#
 // 注意是否可以使用l1 l2的节点
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
 
-// Definition of ListNode
-class ListNode {
-public:
-    int val;
-    ListNode *next;
-    ListNode(int val) {
-        this->val = val;
-        this->next = NULL;
-    }
-};
+#include "lintcode.h"
 
 class Solution {
 public:
     /**
      * @param l1: the first list
      * @param l2: the second list
-     * @return: the sum list of l1 and l2 
+     * @return: the sum list of l1 and l2
      */
     ListNode *addLists(ListNode *l1, ListNode *l2) {
         ListNode dummy(-1);
@@ -52,8 +33,6 @@ public:
 };
 
 int main(int argc, char const *argv[]) {
-
 	Solution sol;
-
 	return 0;
 }

@@ -1,20 +1,8 @@
 // A + B Problem
 // http://www.lintcode.com/en/problem/a-b-problem/
 // 位运算，一次性计算每一位的加和以及进位，当进位==0时停止计算
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -38,6 +26,5 @@ public:
 
 int main(int argc, char const *argv[]) {
     Solution sol;
-
     return 0;
 }

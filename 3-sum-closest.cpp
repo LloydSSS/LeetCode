@@ -1,13 +1,9 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/3-sum-closest/
+
+// Time: O(n2), Space: O(1)
+// 排序，三个指针，固定第一个指针之后，另外两个指针左右夹逼
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -18,10 +14,10 @@ public:
      */
     int threeSumClosest(vector<int> nums, int target) {
         sort(nums.begin(), nums.end());
-        int len = nums.size();
+        int n = nums.size();
         int gap = INT_MAX, ans = 0;
-        for (int i = 0; i < len; ++i) {
-            int j = i+1, k = len-1;
+        for (int i = 0; i < n; ++i) {
+            int j = i+1, k = n-1;
             while (j < k) {
                 int sum = nums[i] + nums[j] + nums[k];
                 if (sum == target) {
@@ -41,10 +37,7 @@ public:
     }
 };
 
-
 int main(int argc, char const *argv[]) {
-
 	Solution sol;
-
 	return 0;
 }

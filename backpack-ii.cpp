@@ -1,18 +1,9 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/backpack-ii/
+// Time:O(mn)
+// 背包问题（价值和重量分开，把A[i]换成V[i]即可），滚动窗口可以将空间复杂度降到O(2m)，从后向前遍历可以将空间复杂度降到O(m)
+// dp[i,j] 用j的容量装前i件物品的最大价值
+
+#include "lintcode.h"
 
 class Solution {
 public:
