@@ -1,13 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/binary-search/
+// Time, Space O(logn)
+// 二分搜索，左闭右闭，注意l+r可能溢出
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -17,13 +11,12 @@ public:
      * @return: The first position of target. Position starts from 0.
      */
     int binarySearch(vector<int> &array, int target) {
-        // write your code here
-        int l = 0, r = array.size();
+        int l = 0, r = array.size()-1;
         while (l < r) {
-            int m = (l+r) >> 1;
+            int m = l + (r-l)/2;
             if (array[m] < target)
                 l = m+1;
-            else if (array[m] >= target)
+            else
                 r = m;
         }
         if (l < array.size() && array[l] == target) return l;
@@ -31,10 +24,7 @@ public:
     }
 };
 
-
-
 int main(int argc, char const *argv[]) {
-
 	Solution sol;
 	return 0;
 }

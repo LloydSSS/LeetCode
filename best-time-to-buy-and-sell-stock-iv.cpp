@@ -1,22 +1,11 @@
 // http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock-iv/
 // k超过n/2就可以使用best-time-to-buy-and-sell-stock-ii的方法
+// Time O(kn), Space O(kn)
 // a. 类似背包问题 dp[i][j] 表示在0～j之间交易i次以内的最大收益，因此，dp[i][j]＝max(dp[i][j-1], prices[j] - prices[ttt] + dp[i-1][ttt]) ttt表示0～j之间dp[i-1][ttt]-prices[ttt]最大的坐标，因此用一个past_max来纪录即可，不用每次遍历
+// Time O(kn), Space O(k)
 // b. 初始资金为0，release[i]表示卖出第i次时的最大钱数，hold[i]表示买入第j次的最大钱数，因为hold[i]需要依赖release[i-1]的值，所以需要后序遍历
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -25,7 +14,7 @@ public:
      * @param prices: Given an integer array
      * @return: Maximum profit
      */
-        int maxProfit(int k, vector<int> &prices) {
+    int maxProfit(int k, vector<int> &prices) {
         return maxProfitOk(k, prices);
         if (prices.size() <= 1 || k == 0) return 0;
         int n = prices.size();

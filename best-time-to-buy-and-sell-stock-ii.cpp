@@ -1,20 +1,8 @@
 // http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock-ii/
-// 水
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// Time:O(n), Space O(1)
+// 不限制交易次数，计算每一天价格和前一天价格的差，累加整数
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -35,6 +23,5 @@ public:
 
 int main(int argc, char const *argv[]) {
     Solution sol;
-
     return 0;
 }

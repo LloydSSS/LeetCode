@@ -11,6 +11,7 @@
 #include <vector>
 #include <string>
 #include <queue>
+#include <stack>
 #include <list>
 #include <map>
 #include <unordered_map>
@@ -29,6 +30,17 @@ struct ListNode {
     int val;
     ListNode *next;
     ListNode(int x) : val(x), next(NULL) {}
+};
+
+// Definition of TreeNode:
+class TreeNode {
+public:
+    int val;
+    TreeNode *left, *right;
+    TreeNode(int val) {
+        this->val = val;
+        this->left = this->right = NULL;
+    }
 };
 
 #endif

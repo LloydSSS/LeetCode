@@ -1,35 +1,11 @@
 // http://www.lintcode.com/en/problem/binary-search-tree-iterator/#
 // Space:O(logn)
-// stack
+// 使用栈先序遍历
 // Space:O(1)
-// threading
+// threading，按照右中左的顺序进行递归线索化，最终指向第一个元素
 // 见morris遍历
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
 
-
-// Definition of TreeNode:
-class TreeNode {
-public:
-    int val;
-    TreeNode *left, *right;
-    TreeNode(int val) {
-        this->val = val;
-        this->left = this->right = NULL;
-    }
-};
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -61,23 +37,6 @@ public:
     stack<TreeNode *> st;
 };
 
-/**
- * Definition of TreeNode:
- * class TreeNode {
- * public:
- *     int val;
- *     TreeNode *left, *right;
- *     TreeNode(int val) {
- *         this->val = val;
- *         this->left = this->right = NULL;
- *     }
- * }
- * Example of iterate a tree:
- * Solution iterator = Solution(root);
- * while (iterator.hasNext()) {
- *    TreeNode * node = iterator.next();
- *    do something for node
- */
 class Solution2 {
 public:
     //@param root: The root of binary tree.

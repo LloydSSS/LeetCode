@@ -1,20 +1,9 @@
 // http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock-iii/
-// 双向遍历
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// Time:O(n), Space O(1)
+// 两次交易：双向遍历,用两个数组分别纪录前向及后向的最大收益，然后在遍历一遍寻找两者和的最大值
+// Time:O(n), Space O(1)
+// 初始资金为0，release[i]表示卖出第i次时的最大钱数，hold[i]表示买入第j次的最大钱数，因为hold[i]需要依赖release[i-1]的值，所以需要后序遍历
+#include "lintcode.h"
 
 class Solution {
 public:
