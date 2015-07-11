@@ -22,11 +22,11 @@ public:
     	int len = nums.size();
     	if (len <= 1) return nums;
     	int i = len-2;
-    	while (i >= 0 && nums[i] >= nums[i+1])
+    	while (i >= 0 && nums[i] <= nums[i+1])
     		i--;
     	if (i >= 0) {
 	    	int j = i;
-	    	while (j+1 < len && nums[j+1] > nums[i])
+	    	while (j+1 < len && nums[j+1] < nums[i])
 	    		j++;
 	    	swap(nums[i], nums[j]);
     	}

@@ -19,10 +19,10 @@ public:
     int kthLargestElement(int k, vector<int> nums) {
         if (k > nums.size()) return -1;
         srand(time(0));
-        int l = 0, r = n-1, pivot = 0;
+        int l = 0, r = nums.size()-1, pivot = 0;
         while (true) {
             pivot = l + rand()%(r-l+1);
-            pivot = partition(num, l, r, pivot);
+            pivot = partition(nums, l, r, pivot);
             if (pivot == k-1)
                 break;
             if (pivot > k-1)
@@ -30,9 +30,9 @@ public:
             else
                 l = pivot+1;
         }
-        return num[pivot];
+        return nums[pivot];
     }
-    
+
     int partition(vector<int> &nums, int l, int r, int pivot) {
         while (l < r) {
             while (nums[l] < nums[pivot]) l++;
@@ -42,13 +42,12 @@ public:
             swap(nums[r], nums[pivot]);
             pivot = r;
         }
-        return pivot; 
+        return pivot;
     }
 };
 
 
 int main(int argc, char const *argv[]) {
-
 	Solution sol;
 
 	return 0;
