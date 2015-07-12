@@ -1,19 +1,7 @@
 // http://www.lintcode.com/en/problem/longest-increasing-continuous-subsequence/
-// 水dp
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// dp[i]表示以i结尾的A[0~i]之间的最长上升子序列的长度
+
+#include "lintcode.h"
 
 class Solution {
 public:

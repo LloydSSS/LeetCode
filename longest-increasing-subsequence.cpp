@@ -1,18 +1,10 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/longest-increasing-subsequence/
+// Time O(n2)
+// dp
+// Time O(nlogn)
+// minV[i]纪录长度为i的LIS的最小结尾元素
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -64,10 +56,6 @@ public:
         return l;
     }
 };
-
-
-
-
 
 int main(int argc, char const *argv[]) {
     Solution sol;

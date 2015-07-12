@@ -1,15 +1,10 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/longest-common-prefix/
+// 枚举遍历
+
+#include "lintcode.h"
 
 class Solution {
-public:    
+public:
     /**
      * @param strs: A list of strings
      * @return: The longest common prefix
@@ -20,10 +15,10 @@ public:
     	for (; len < strs[0].size(); ++len) {
 			for (int i = 1; i < strs.size(); ++i) {
 				if (len == strs[i].size() || strs[i][len] != strs[0][len])
-					return strs[0].substr(0, len);  
+					return strs[0].substr(0, len);
 			}
 		}
-		return strs[0].substr(0, len);   
+		return strs[0].substr(0, len);
     }
 };
 

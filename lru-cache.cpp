@@ -1,17 +1,7 @@
 // http://www.lintcode.com/zh-cn/problem/lru-cache/
 // a. list+unordered_map
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <list>
-#include <map>
-#include <unordered_map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class LRUCache{
 public:

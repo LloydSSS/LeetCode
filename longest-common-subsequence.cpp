@@ -1,18 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/longest-common-subsequence/
+// dp[i,j] 表示A[0~i-1],B[0~j-1]之间的LCS的长度
+
+#include "lintcode.h"
 
 class Solution {
 public:

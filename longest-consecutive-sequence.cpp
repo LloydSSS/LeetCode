@@ -1,18 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/longest-consecutive-sequence/
+// 将数字放在hash table里面，对每个数字进行左右扩展，寻找连续长度，并删掉访问过的数字
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -32,9 +21,10 @@ public:
     }
 
     int find_bound(unordered_set<int> &ust, int x) {
-        int len = 0;
-        unordered_set<int>::iterator usti;
-        int upper = x;
+        if (ust.find(x) != ust.end())
+            return 0;
+        int len = 1;
+        int upper = x+1;
         while (ust.find(upper) != ust.end()) {
             len++;
             ust.erase(upper++);
