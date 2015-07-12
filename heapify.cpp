@@ -1,20 +1,7 @@
 // http://www.lintcode.com/en/problem/heapify/
-// 水
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// 堆操作
+
+#include "lintcode.h"
 
 class Solution {
 public:

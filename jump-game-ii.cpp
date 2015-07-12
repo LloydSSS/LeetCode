@@ -1,20 +1,9 @@
 // Jump Game II
 // http://www.lintcode.com/en/problem/jump-game-ii/
 // a. reach 纪录目前可以到达的最远处，step[i]纪录到达i需要的步数
-// b. last纪录之前可以到达的最远处， curr纪录现在可以到达的最远处，如果i到达last之外，则需要
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// b. last纪录之前可以到达的最远处， curr纪录现在可以到达的最远处，如果i到达last之外，则需要新的一步
+
+#include "lintcode.h"
 
 class Solution {
 public:

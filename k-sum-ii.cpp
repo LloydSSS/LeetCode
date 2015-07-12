@@ -1,16 +1,8 @@
 // k Sum II
 // http://www.lintcode.com/en/problem/k-sum-ii/
 // dfs
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

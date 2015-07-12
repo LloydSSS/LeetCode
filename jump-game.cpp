@@ -1,16 +1,8 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// Jump Game II
+// http://www.lintcode.com/en/problem/jump-game-ii/
+// can_reach 纪录目前可以到达的最远处，
+
+#include "lintcode.h"
 
 class Solution {
 public:

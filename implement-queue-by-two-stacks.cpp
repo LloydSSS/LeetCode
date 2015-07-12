@@ -1,15 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/implement-queue-by-two-stacks/
+// 水
+
+#include "lintcode.h"
 
 class Queue {
 public:
@@ -17,7 +9,6 @@ public:
     stack<int> stack2;
 
     Queue() {
-        // do intialization if necessary
     }
 
     void push(int element) {

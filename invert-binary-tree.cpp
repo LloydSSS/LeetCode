@@ -1,29 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/invert-binary-tree/
+// 水
 
-
-// Definition of TreeNode:
-class TreeNode {
-public:
-    int val;
-    TreeNode *left, *right;
-    TreeNode(int val) {
-        this->val = val;
-        this->left = this->right = nullptr;
-    }
-};
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -39,6 +17,30 @@ public:
         root->right = pn;
         invertBinaryTree(root->left);
         invertBinaryTree(root->right);
+    }
+};
+
+class Solution2 {
+public:
+    /**
+     * @param root: a TreeNode, the root of the binary tree
+     * @return: nothing
+     */
+    void invertBinaryTree(TreeNode *root) {
+        if (root == nullptr) return;
+        stack<TreeNode*> nodes;
+        nodes.emplace(root);
+        while (!nodes.empty()) {
+            auto node = nodes.top();
+            nodes.pop();
+            swap(node->left, node->right);
+            if (node->left != nullptr) {
+                nodes.emplace(node->left);
+            }
+            if (node->right != nullptr) {
+                nodes.emplace(node->right);
+            }
+        }
     }
 };
 

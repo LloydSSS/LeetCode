@@ -1,19 +1,7 @@
 // http://www.lintcode.com/en/problem/hash-function/
 // Magic Number is what?
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -32,7 +20,6 @@ public:
         return static_cast<int>(hash);
     }
 };
-
 
 int main(int argc, char const *argv[]) {
     Solution sol;

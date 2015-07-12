@@ -1,29 +1,7 @@
 // http://www.lintcode.com/zh-cn/problem/insert-interval/
 // 水
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
 
-// Definition of Interval:
-class Interval{
-public:
-    int start, end;
-    Interval(int start, int end) {
-        this->start = start;
-        this->end = end;
-    }
-};
+#include "lintcode.h"
 
 class Solution {
 public:

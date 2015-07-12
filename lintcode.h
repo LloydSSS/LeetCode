@@ -65,5 +65,14 @@ struct RandomListNode {
     RandomListNode(int x) : label(x), next(nullptr), random(nullptr) {}
 };
 
+// Definition of Interval:
+class Interval{
+public:
+    int start, end;
+    Interval(int start, int end) {
+        this->start = start;
+        this->end = end;
+    }
+};
 
 #endif

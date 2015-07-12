@@ -1,18 +1,11 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/largest-rectangle-in-histogram/
+// Time:O(n2)
+// 枚举
+// Time:O(n)
+// 使用stack，栈里面保存着递增序列，如果出现一个小于栈顶元素的高度，则将弹出并处理，直到栈为空或者栈顶元素大于新高度，将新高度压栈
+// 在数组最后加入一个0可以去掉边界判断
+
+#include "lintcode.h"
 
 class Solution {
 public:

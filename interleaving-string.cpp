@@ -1,19 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/interleaving-string/
+// dp[i,j]表示s3[0~i+j-1]是否是有s1[0~i-1]和s2[0~j-1]组成的
+
+#include "lintcode.h"
 
 class Solution {
 public:

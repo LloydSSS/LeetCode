@@ -1,27 +1,8 @@
 // Linked List Cycle II
 // http://www.lintcode.com/en/problem/linked-list-cycle-ii/
 // a. 2(a+x) = a+x+ml a---非环长度，x---进入环后的长度， m快指针转的圈数，l圈的长度
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
 
-// Definition of ListNode
-class ListNode {
-public:
-    int val;
-    ListNode *next;
-    ListNode(int val) {
-        this->val = val;
-        this->next = nullptr;
-    }
-};
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -51,8 +32,6 @@ public:
 };
 
 int main(int argc, char const *argv[]) {
-
 	Solution sol;
-
 	return 0;
 }

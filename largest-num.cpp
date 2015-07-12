@@ -1,16 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/largest-number/
+// 第一次面试。。。。
+
+#include "lintcode.h"
 
 bool cmp(string a, string b) {
 	return a+b > b+a;
@@ -22,7 +13,7 @@ public:
      *@param num: A list of non negative integers
      *@return: A string
      */
-    
+
     string largestNumber(vector<int> &nums) {
         if (nums.size() == 0) return string("");
 
