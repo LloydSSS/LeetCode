@@ -1,29 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/convert-sorted-array-to-binary-search-tree-with-minimal-height/
+// 分治，找到中心位置，然后递归调用
 
-
-// Definition of TreeNode:
-class TreeNode {
-public:
-    int val;
-    TreeNode *left, *right;
-    TreeNode(int val) {
-        this->val = val;
-        this->left = this->right = nullptr;
-    }
-};
+#include "lintcode.h"
 
 class Solution {
 public:

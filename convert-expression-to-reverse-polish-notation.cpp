@@ -1,19 +1,7 @@
 // http://www.lintcode.com/en/problem/convert-expression-to-polish-notation/
 // 注意弹出计算时要使用while，因为有可能有+*+的情况
-#include <iostream>
-#include <algorithm>
-#include <numeric>
-#include <vector>
-#include <stack>
-#include <map>
-#include <unordered_map>
-#include <string>
-#include <sstream>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

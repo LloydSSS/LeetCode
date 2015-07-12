@@ -1,20 +1,8 @@
 // http://www.lintcode.com/en/problem/count-of-smaller-number
-// 水
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// 线段树应用
+// TODO:树状数组
+
+#include "lintcode.h"
 
 // Definition of SegmentTreeNode2:
 class SegmentTreeNode2 {

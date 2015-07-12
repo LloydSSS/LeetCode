@@ -1,16 +1,8 @@
 // http://www.lintcode.com/zh-cn/problem/coins-in-a-line-iii/
 // dp[i][j] means the max profit the first player can get from j to i
 // http://techinpad.blogspot.com/2015/05/lintcode-coins-in-line-iii.html
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

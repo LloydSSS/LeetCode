@@ -44,4 +44,18 @@ public:
     }
 };
 
+// Definition for undirected graph.
+struct UndirectedGraphNode {
+    int label;
+    vector<UndirectedGraphNode *> neighbors;
+    UndirectedGraphNode(int x) : label(x) {};
+};
+
+// Definition for singly-linked list with a random pointer.
+struct RandomListNode {
+    int label;
+    RandomListNode *next, *random;
+    RandomListNode(int x) : label(x), next(nullptr), random(nullptr) {}
+};
+
 #endif

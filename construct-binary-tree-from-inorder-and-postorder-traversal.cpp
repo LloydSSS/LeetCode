@@ -1,30 +1,7 @@
 // http://www.lintcode.com/en/problem/construct-binary-tree-from-inorder-and-postorder-traversal/
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <queue>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// 1.寻找根节点的位置，2.对左右子树递归调用
 
-// Definition of TreeNode:
-class TreeNode {
-public:
-    int val;
-    TreeNode *left, *right;
-    TreeNode(int val) {
-        this->val = val;
-        this->left = this->right = nullptr;
-    }
-};
+#include "lintcode.h"
 
 class Solution {
     /**

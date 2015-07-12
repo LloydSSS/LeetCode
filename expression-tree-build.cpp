@@ -1,18 +1,7 @@
 // http://www.lintcode.com/en/problem/expression-tree-build/
 // 注意弹出计算时要使用while，因为有可能有+*+的情况
-#include <iostream>
-#include <algorithm>
-#include <numeric>
-#include <vector>
-#include <stack>
-#include <map>
-#include <unordered_map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 // Definition of ExpressionTreeNode:
 class ExpressionTreeNode {

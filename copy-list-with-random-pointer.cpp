@@ -1,20 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/copy-list-with-random-pointer/
+// 深拷贝，可以使用hash map纪录对应关系之后再拷贝random pointer，或者先把拷贝的节点放在原节点的后面，再遍历一遍进行分解
 
-// Definition for singly-linked list with a random pointer.
-struct RandomListNode {
-    int label;
-    RandomListNode *next, *random;
-    RandomListNode(int x) : label(x), next(nullptr), random(nullptr) {}
-};
+#include "lintcode.h"
 
 class Solution {
 public:

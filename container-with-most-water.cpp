@@ -1,19 +1,7 @@
 // http://www.lintcode.com/en/problem/container-with-most-water/
-// 分治，注意负值的处理
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// Two-pointer, 每次移动较小高度的指针
+
+#include "lintcode.h"
 
 class Solution {
 public:

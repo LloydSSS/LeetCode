@@ -1,19 +1,7 @@
 // http://www.lintcode.com/en/problem/count-and-say/
-// 水
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// 寻找连续字符出现的长度然后进行转换
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -38,7 +26,6 @@ public:
         return s;
     }
 };
-
 
 int main(int argc, char const *argv[]) {
     Solution sol;

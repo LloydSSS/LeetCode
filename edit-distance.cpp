@@ -1,17 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/edit-distance/
+// dp[i,j] 表示word1[0~i], word2[0~j]之间的编辑距离
+
+#include "lintcode.h"
 
 class Solution {
 public:

@@ -1,16 +1,8 @@
 // http://www.lintcode.com/zh-cn/problem/coins-in-a-line-ii/
 // For any index i, we can know the gap between the two players if the first player moves from it. Suppose the first player moves from i and it wins f[i](the gap). If the second player moves from it, we should consider f[i] as a loss of the first player.
 // http://techinpad.blogspot.com/2015/05/lintcode-coins-in-line-ii.html
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

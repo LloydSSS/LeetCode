@@ -1,17 +1,6 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/distinct-subsequences/
+// dp[i][j] 表示s[0~i],t[0~j]间distinct subsequences的个数
+#include "lintcode.h"
 
 class Solution {
 public:

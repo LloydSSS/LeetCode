@@ -1,19 +1,8 @@
 // http://www.lintcode.com/en/problem/continuous-subarray-sum/
 // dp, 纪录开始下标
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// 空间复杂度可以做到O(1)，只纪录当前的最大和
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -45,6 +34,25 @@ public:
             }
         }
         return ans;
+    }
+
+    int findMaxSubarray(const vector<int>& A, vector<int> &max_i_j) {
+        int curr_sum = A[0];
+        int max_sum = curr_sum;
+        for (int i = 0, j = 1; j < A.size(); ++j) {
+            if (curr_sum < 0) {
+                i = j;
+                curr_sum = 0;
+            }
+
+            curr_sum += A[j];
+            if (curr_sum > max_sum) {
+                max_sum = curr_sum;
+                max_i_j[0] = i, max_i_j[1] = j;
+            }
+        }
+
+        return max_sum;
     }
 };
 

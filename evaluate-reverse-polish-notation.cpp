@@ -1,20 +1,7 @@
 // http://www.lintcode.com/en/problem/evaluate-reverse-polish-notation/
-// 栈，水
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// 栈，按照运算符，操作数、操作数顺序计算即可
+
+#include "lintcode.h"
 
 class Solution {
 public:

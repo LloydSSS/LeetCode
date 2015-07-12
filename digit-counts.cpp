@@ -3,18 +3,8 @@
 // a. 遍历0~n判断每个数字中出现k几次 O(nlogn)
 // b. 判断每一位中k出现了几次，和高位数，低位数以及当前数字都有关系，分情况讨论 O(logn)
 //     注意base应使用long long 防止溢出
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

@@ -1,37 +1,32 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/compare-strings/
+// 使用一个hash table来计数。判断是否A的所有字母计数都大于B
+
+#include "lintcode.h"
 
 class Solution {
-public:    
+public:
     /**
-     * @param strs: A list of strings
-     * @return: A list of strings
+     * @param A: A string includes Upper Case letters
+     * @param B: A string includes Upper Case letter
+     * @return:  if string A contains all of the characters in B return true
+     *           else return false
      */
-    vector<string> anagrams(vector<string> &strs) {
-    	vector<string> res;
-        map<string, vector<string> > mp;
-        for (int i = 0; i < strs.size(); ++i) {
-        	string ss = strs[i];
-        	sort(ss.begin(), ss.end());
-        	if (mp.find(ss) == mp.end()) {
-        		mp[ss] = vector<string>(1, strs[i]);
-        	} else {
-        		mp[ss].push_back(strs[i]);
-        	}
+    bool compareStrings(string A, string B) {
+        if (A.size() < B.size()) return false;
+
+        vector<int> ma(26, 0);
+        vector<int> mb(26, 0);
+        for (int i = 0; i < A.size(); ++i) {
+            ma[A[i]-'A']++;
         }
-        for (map<string, vector<string> >::iterator it = mp.begin(); it != mp.end(); it++) {
-        	if (it->second.size() != 1) {
-        		res.insert(res.end(), it->second.begin(), it->second.end());
-        	}
+        for (int i = 0; i < B.size(); ++i) {
+            mb[B[i]-'A']++;
         }
-        return res;
+
+        for (int i = 0; i < 26; ++i) {
+            if (ma[i] < mb[i]) return false;
+        }
+        return true;
     }
 };
 

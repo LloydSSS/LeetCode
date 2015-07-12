@@ -1,19 +1,6 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/data-stream-median/
+// 用一个最小堆来维护较大部分的数、用一个最大堆来维护较小部分的数，保持最大堆的size要大于最小堆的size，最大堆的堆顶即是中位数
+#include "lintcode.h"
 
 class Solution {
 public:

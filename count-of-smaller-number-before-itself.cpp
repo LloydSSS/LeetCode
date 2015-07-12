@@ -1,5 +1,6 @@
 // http://www.lintcode.com/en/problem/count-of-smaller-number-before-itself
-// 水
+// 线段树应用
+// TODO:树状数组
 #include "lintcode.h"
 
 class Solution {
