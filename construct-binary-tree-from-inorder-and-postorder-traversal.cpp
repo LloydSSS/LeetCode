@@ -22,7 +22,7 @@ public:
     TreeNode *left, *right;
     TreeNode(int val) {
         this->val = val;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 
@@ -40,7 +40,7 @@ public:
     }
     TreeNode *build(vector<int> &inorder, int i1, int i2, vector<int> &postorder, int p1, int p2) {
         if (p1 >= p2 || i1 >= i2)
-            return NULL;
+            return nullptr;
         int v = postorder[p2-1];
         int i = findroot(inorder, i1, i2, v);
         TreeNode *root = new TreeNode(v);
@@ -48,7 +48,7 @@ public:
         root->right = build(inorder, i+1, i2, postorder, p1+i-i1, p2-1);
         return root;
     }
-    
+
     TreeNode *buildTree(vector<int> &inorder, vector<int> &postorder) {
         int i1 = 0, i2 = inorder.size();
         int p1 = 0, p2 = postorder.size();

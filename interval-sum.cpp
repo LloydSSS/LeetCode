@@ -35,7 +35,7 @@ public:
     SumSegmentTreeNode(int start, int end, long long sum = 0) {
         this->start = start, this->end = end;
         this->sum = sum;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 

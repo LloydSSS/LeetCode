@@ -25,7 +25,7 @@ public:
         this->start = start;
         this->end = end;
         this->count = count;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 

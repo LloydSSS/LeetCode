@@ -74,6 +74,6 @@ public:
 
 
 int main(int argc, char const *argv[]) {
-    Solution sol(NULL);
+    Solution sol(nullptr);
     return 0;
 }

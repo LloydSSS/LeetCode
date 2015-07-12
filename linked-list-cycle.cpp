@@ -16,7 +16,7 @@ public:
     ListNode *next;
     ListNode(int val) {
         this->val = val;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -28,7 +28,7 @@ public:
      */
     bool hasCycle(ListNode *head) {
         ListNode *fast = head, *slow = head;
-        while (fast != NULL && fast->next != NULL) {
+        while (fast != nullptr && fast->next != nullptr) {
             fast = fast->next->next;
             slow = slow->next;
             if (fast == slow)

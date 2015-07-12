@@ -25,7 +25,7 @@ public:
     TreeNode *left, *right;
     TreeNode(int val) {
         this->val = val;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 

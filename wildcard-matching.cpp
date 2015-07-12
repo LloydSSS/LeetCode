@@ -20,8 +20,8 @@ public:
      * @return: A boolean
      */
     bool isMatch(const char *s, const char *p) {
-        if (s == NULL && p == NULL) return true;
-        const char *ss = NULL, *star = NULL;
+        if (s == nullptr && p == nullptr) return true;
+        const char *ss = nullptr, *star = nullptr;
         while (*s != '\0') {
             if (*s == *p || *p == '?') {
                 s++, p++;
@@ -29,7 +29,7 @@ public:
                 star = p;
                 p++;
                 ss = s;
-            } else if (star != NULL) {
+            } else if (star != nullptr) {
                 s = ++ss;
                 p = star+1;
             } else

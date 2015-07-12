@@ -1,30 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <queue>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
-
-
-// Definition of TreeNode:
-class TreeNode {
-public:
-    int val;
-    TreeNode *left, *right;
-    TreeNode(int val) {
-        this->val = val;
-        this->left = this->right = NULL;
-    }
-};
+// http://www.lintcode.com/problem/binary-tree-level-order-traversal
+// bfs
+// 纪录高度或者使用两个队列
+#include "lintcode.h"
 
 class Solution {
     /**
@@ -34,7 +11,7 @@ class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode *root) {
         vector<vector<int> > retv;
-        if (root == NULL) return retv;
+        if (root == nullptr) return retv;
 
         queue<pair<TreeNode *, int> > qu;
         qu.push(make_pair(root, 0));

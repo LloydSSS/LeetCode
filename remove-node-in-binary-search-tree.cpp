@@ -21,7 +21,7 @@ public:
     TreeNode *left, *right;
     TreeNode(int val) {
         this->val = val;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 
@@ -33,9 +33,9 @@ public:
      * @return: The root of the binary search tree after removal.
      */
     TreeNode* removeNode(TreeNode* root, int value) {
-        if (root == NULL)
+        if (root == nullptr)
             return root;
-        TreeNode *dummy_root = NULL;
+        TreeNode *dummy_root = nullptr;
         if (value == INT_MIN) {
             dummy_root = new TreeNode(value+1);
             dummy_root->left = root;
@@ -48,7 +48,7 @@ public:
     }
 
     TreeNode* removeNodeHelper(TreeNode* root, int value) {
-        if (root == NULL)
+        if (root == nullptr)
             return root;
         if (value < root->val)
             root->left = removeNodeHelper(root->left, value);
@@ -56,16 +56,16 @@ public:
             root->right = removeNodeHelper(root->right, value);
         else {
             TreeNode *tmp = root;
-            if (root->left == NULL)
+            if (root->left == nullptr)
                 root = root->right;
-            else if (root->right == NULL)
+            else if (root->right == nullptr)
                 root = root->left;
             else {
                 TreeNode *ln = root->left;
                 TreeNode *rn = root->right;
                 TreeNode *rln = root->right->left;
                 TreeNode *lrn = root->left;
-                while (lrn->right != NULL) {
+                while (lrn->right != nullptr) {
                     lrn = lrn->right;
                 }
                 root = rn;

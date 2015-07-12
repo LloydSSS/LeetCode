@@ -16,7 +16,7 @@ public:
     ListNode *next;
     ListNode(int val) {
         this->val = val;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -29,14 +29,14 @@ public:
      * @return: The head of linked list.
      */
     ListNode *removeNthFromEnd(ListNode *head, int n) {
-        if (head == NULL)
+        if (head == nullptr)
             return head;
         ListNode dummy(-1);
         dummy.next = head;
         ListNode *fast = &dummy, *slow = &dummy;
         for (int i = 0; i < n; ++i)
             fast = fast->next;
-        while (fast->next != NULL) {
+        while (fast->next != nullptr) {
             fast = fast->next;
             slow = slow->next;
         }

@@ -16,7 +16,7 @@ public:
     ListNode *next;
     ListNode(int val) {
         this->val = val;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -28,7 +28,7 @@ public:
      * @return: the list after rotation
      */
     ListNode *rotateRight(ListNode *head, int k) {
-        if (k == 0 || head == NULL || head->next == NULL)
+        if (k == 0 || head == nullptr || head->next == nullptr)
             return head;
         ListNode *p = head;
         int len = 1;
@@ -42,7 +42,7 @@ public:
             p = p->next;
         }
         head = p->next;
-        p->next = NULL;
+        p->next = nullptr;
         return head;
     }
 };

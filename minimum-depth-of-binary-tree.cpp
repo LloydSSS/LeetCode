@@ -24,7 +24,7 @@ public:
     TreeNode *left, *right;
     TreeNode(int val) {
         this->val = val;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 
@@ -35,7 +35,7 @@ public:
      * @return: An integer
      */
     int minDepth(TreeNode *root) {
-        if (root == NULL) return 0;
+        if (root == nullptr) return 0;
         queue<pair<TreeNode *, int> > qu;
         qu.push(make_pair(root, 1));
         while (!qu.empty()) {
@@ -43,7 +43,7 @@ public:
             qu.pop();
             TreeNode *p = pr.first;
             int d = pr.second;
-            if (p->left == NULL && p->right == NULL)
+            if (p->left == nullptr && p->right == nullptr)
                 return d;
             if (p->left)
                 qu.push(make_pair(p->left, d+1));

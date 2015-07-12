@@ -16,7 +16,7 @@ public:
     ListNode *next;
     ListNode(int val) {
         this->val = val;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -27,10 +27,10 @@ public:
      * @return: The new head of reversed linked list.
      */
     ListNode *reverse(ListNode *head) {
-        if (head == NULL || head->next == NULL)
+        if (head == nullptr || head->next == nullptr)
             return head;
-        ListNode *pre = NULL, *cur = head;
-        while (cur != NULL) {
+        ListNode *pre = nullptr, *cur = head;
+        while (cur != nullptr) {
             ListNode *ne = cur->next;
             cur->next = pre;
             pre = cur;
@@ -43,12 +43,12 @@ public:
      * @return: The new head of reversed linked list.
      */
     ListNode *reverse2(ListNode *head) {
-        if (head == NULL || head->next == NULL)
+        if (head == nullptr || head->next == nullptr)
             return head;
         ListNode dummy(-1);
         dummy.next = head;
         ListNode *cur = head;
-        while (cur->next != NULL) {
+        while (cur->next != nullptr) {
             ListNode *ne = cur->next;
             cur->next = ne->next;
             ne->next = dummy.next;

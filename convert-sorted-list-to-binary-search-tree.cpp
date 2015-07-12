@@ -16,7 +16,7 @@ public:
     ListNode *next;
     ListNode(int val) {
         this->val = val;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -27,7 +27,7 @@ public:
     TreeNode *left, *right;
     TreeNode(int val) {
         this->val = val;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 
@@ -38,20 +38,20 @@ public:
      * @return: a tree node
      */
     TreeNode *sortedListToBST(ListNode *head) {
-        if (head == NULL)
-            return NULL;
-        if (head ->next == NULL)
+        if (head == nullptr)
+            return nullptr;
+        if (head ->next == nullptr)
             return new TreeNode(head->val);
         ListNode dummy(-1);
         dummy.next = head;
         ListNode *fast = &dummy, *slow = fast;
-        while (fast->next != NULL &&
-            fast->next->next != NULL) {
+        while (fast->next != nullptr &&
+            fast->next->next != nullptr) {
             fast = fast->next->next;
             slow = slow->next;
         }
         ListNode *head2 = slow->next;
-        slow->next = NULL;
+        slow->next = nullptr;
         TreeNode *rt = new TreeNode(head2->val);
         head2 = head2->next;
         rt->left = sortedListToBST(head);

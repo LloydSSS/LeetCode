@@ -16,7 +16,7 @@ public:
     ListNode *next;
     ListNode(int val) {
         this->val = val;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -30,7 +30,7 @@ public:
     ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
         ListNode dummy(-1);
         ListNode *l3 = &dummy;
-        while (l1 != NULL && l2 != NULL) {
+        while (l1 != nullptr && l2 != nullptr) {
             if (l1->val < l2->val) {
                 l3->next = l1;
                 l1 = l1->next;
@@ -40,7 +40,7 @@ public:
             }
             l3 = l3->next;
         }
-        l3->next = l1 == NULL ? l2 : l1;
+        l3->next = l1 == nullptr ? l2 : l1;
         return dummy.next;
     }
     /**
@@ -49,19 +49,19 @@ public:
                     using constant space complexity.
      */
     ListNode *sortList(ListNode *head) {
-        if (head == NULL || head->next == NULL)
+        if (head == nullptr || head->next == nullptr)
             return head;
 
         ListNode dummy(-1);
         dummy.next = head;
         ListNode *fast = &dummy, *slow = fast;
-        while (fast->next != NULL &&
-            fast->next->next != NULL) {
+        while (fast->next != nullptr &&
+            fast->next->next != nullptr) {
             fast = fast->next->next;
             slow = slow->next;
         }
         ListNode *head2 = slow->next;
-        slow->next = NULL;
+        slow->next = nullptr;
 
         head = sortList(head);
         head2 = sortList(head2);

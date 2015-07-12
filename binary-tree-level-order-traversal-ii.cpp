@@ -1,30 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <queue>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
-
-
-// Definition of TreeNode:
-class TreeNode {
-public:
-    int val;
-    TreeNode *left, *right;
-    TreeNode(int val) {
-        this->val = val;
-        this->left = this->right = NULL;
-    }
-};
+// http://www.lintcode.com/problem/binary-tree-level-order-traversal-ii
+// bfs
+// 纪录高度或者使用两个队列，在i的基础上reverse一下
+#include "lintcode.h"
 
 class Solution {
     /**
@@ -33,8 +10,8 @@ class Solution {
      */
 public:
     vector<vector<int>> levelOrder(TreeNode *root) {
-        vector<vector<int> > retv;
-        if (root == NULL) return retv;
+        vector<vector<int> > ans;
+        if (root == nullptr) return ans;
 
         queue<pair<TreeNode *, int> > qu;
         qu.push(make_pair(root, 0));
@@ -43,16 +20,16 @@ public:
             qu.pop();
             TreeNode *p = pr.first;
             int d = pr.second;
-            if (d == retv.size())
-                retv.push_back(vector<int>());
-            retv[d].push_back(p->val);
+            if (d == ans.size())
+                ans.push_back(vector<int>());
+                ans[d].push_back(p->val);
             if (p->left)
                 qu.push(make_pair(p->left, d+1));
             if (p->right)
                 qu.push(make_pair(p->right, d+1));
         }
-        reverse(retv.begin(), retv.end());        
-        return retv;
+        reverse(ans.begin(), ans.end());
+        return ans;
     }
 };
 

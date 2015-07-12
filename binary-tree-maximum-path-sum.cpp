@@ -1,31 +1,8 @@
 // http://www.lintcode.com/en/problem/binary-tree-maximum-path-sum/
 // 分治，注意负值的处理
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// maxPathSumHelper返回以root为起点向下的最长路径和,则通过root的最大路径和为以两个孩子为起点的最大路径和的加和（负数不进行求和）
 
-
-// Definition of TreeNode:
-class TreeNode {
-public:
-    int val;
-    TreeNode *left, *right;
-    TreeNode(int val) {
-        this->val = val;
-        this->left = this->right = NULL;
-    }
-};
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -40,8 +17,9 @@ public:
     }
 
     int ans;
+    // 返回以root为起点向下的最长路径和
     int maxPathSumHelper(TreeNode *root) {
-        if (root == NULL)
+        if (root == nullptr)
             return 0;
         int lsum = maxPathSumHelper(root->left);
         int rsum = maxPathSumHelper(root->right);

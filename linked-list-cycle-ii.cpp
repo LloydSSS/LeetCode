@@ -19,7 +19,7 @@ public:
     ListNode *next;
     ListNode(int val) {
         this->val = val;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -28,19 +28,19 @@ public:
     /**
      * @param head: The first node of linked list.
      * @return: The node where the cycle begins.
-     *           if there is no cycle, return null
+     *           if there is no cycle, return nullptr
      */
     ListNode *detectCycle(ListNode *head) {
-        if (head == NULL || head->next == NULL) return NULL;
+        if (head == nullptr || head->next == nullptr) return nullptr;
         ListNode *fast = head, *slow = head;
-        while (fast != NULL && fast->next != NULL) {
+        while (fast != nullptr && fast->next != nullptr) {
             fast = fast->next->next;
             slow = slow->next;
             if (fast == slow)
                 break;
         }
         if (fast != slow)
-            return NULL;
+            return nullptr;
         slow = head;
         while (slow != fast) {
             slow = slow->next;

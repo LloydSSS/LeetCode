@@ -18,7 +18,7 @@ public:
     ListNode *next;
     ListNode(int val) {
         this->val = val;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -27,18 +27,18 @@ public:
     /**
      * @param head: The first node of linked list.
      * @param n: An integer.
-     * @return: Nth to last node of a singly linked list. 
+     * @return: Nth to last node of a singly linked list.
      */
     ListNode *nthToLast(ListNode *head, int n) {
         ListNode dummy(-1);
         dummy.next = head;
         ListNode *fast = &dummy;
         ListNode *slow = &dummy;
-        for (int i = 0; i < n && fast != NULL; ++i)
+        for (int i = 0; i < n && fast != nullptr; ++i)
             fast = fast->next;
-        if (fast == NULL)
-            return NULL;
-        while (fast != NULL) {
+        if (fast == nullptr)
+            return nullptr;
+        while (fast != nullptr) {
             fast = fast->next;
             slow = slow->next;
         }

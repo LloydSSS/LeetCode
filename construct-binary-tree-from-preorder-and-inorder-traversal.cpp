@@ -21,7 +21,7 @@ public:
     TreeNode *left, *right;
     TreeNode(int val) {
         this->val = val;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 
@@ -29,7 +29,7 @@ class Solution {
 public:
     TreeNode *buildTreeHelper(vector<int> &preorder, vector<int> &inorder, int pi, int ii, int l) {
         if (l == 0)
-            return NULL;
+            return nullptr;
         int rtval = preorder[pi];
         TreeNode *rt = new TreeNode(rtval);
         int pos = ii;
@@ -49,7 +49,7 @@ public:
      */
     TreeNode *buildTree(vector<int> &preorder, vector<int> &inorder) {
         if (preorder.size() == 0)
-            return NULL;
+            return nullptr;
         return buildTreeHelper(preorder, inorder, 0, 0, preorder.size());
     }
 };

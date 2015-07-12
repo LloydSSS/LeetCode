@@ -21,7 +21,7 @@ public:
     TreeNode *left, *right;
     TreeNode(int val) {
         this->val = val;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 
@@ -29,12 +29,12 @@ class Solution {
 public:
     bool inorder(TreeNode *root, long long &last_val) {
 
-        if (root->left != NULL && !inorder(root->left, last_val))
+        if (root->left != nullptr && !inorder(root->left, last_val))
             return false;
         if (last_val >= root->val)
             return false;
         last_val = root->val;
-        if (root->right != NULL && !inorder(root->right, last_val))
+        if (root->right != nullptr && !inorder(root->right, last_val))
             return false;
         return true;
 
@@ -44,7 +44,7 @@ public:
      * @return: True if the binary tree is BST, or false
      */
     bool isValidBST(TreeNode *root) {
-        if (root == NULL)
+        if (root == nullptr)
             return true;
         long long last_val = LONG_MIN;
         return inorder(root, last_val);

@@ -14,16 +14,16 @@ public:
         ListNode dummy(-1);
         ListNode *s = &dummy;
         int carry = 0;
-        while (l1 != NULL && l2 != NULL) {
+        while (l1 != nullptr && l2 != nullptr) {
             s->next = new ListNode((l1->val + l2->val + carry)%10);
             carry = (l1->val + l2->val + carry)/10;
             s = s->next;
             l1 = l1->next;
             l2 = l2->next;
         }
-        s->next = l1 == NULL ? l2 : l1;
+        s->next = l1 == nullptr ? l2 : l1;
         if (carry != 0) {
-            if (s->next == NULL)
+            if (s->next == nullptr)
                 s->next = new ListNode(carry);
             else
                 s->next->val += carry;

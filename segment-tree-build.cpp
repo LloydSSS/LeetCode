@@ -23,7 +23,7 @@ public:
     SegmentTreeNode *left, *right;
     SegmentTreeNode(int start, int end) {
         this->start = start, this->end = end;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 

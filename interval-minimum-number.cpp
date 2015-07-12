@@ -34,7 +34,7 @@ public:
     MinSegmentTreeNode(int start, int end, int min = 0) {
         this->start = start, this->end = end;
         this->min = min;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 

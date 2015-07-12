@@ -16,7 +16,7 @@ public:
     ListNode *next;
     ListNode(int val) {
         this->val = val;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -27,11 +27,11 @@ public:
      * @return: head node
      */
     ListNode *deleteDuplicates(ListNode *head) {
-        if (head == NULL || head->next == NULL)
+        if (head == nullptr || head->next == nullptr)
             return head;
 
         ListNode *p = head, *q = head->next;
-        while (q != NULL) {
+        while (q != nullptr) {
             if (q->val == p->val) {
                 ListNode *tmp = q;
                 q = q->next;

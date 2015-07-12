@@ -23,7 +23,7 @@ public:
     TreeNode *left, *right;
     TreeNode(int val) {
         this->val = val;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 
@@ -35,10 +35,10 @@ public:
      * @return: Return the least common ancestor(LCA) of the two nodes.
      */
     TreeNode *lowestCommonAncestor(TreeNode *root, TreeNode *A, TreeNode *B) {
-        if (root == NULL || A == NULL || B == NULL) return NULL; 
+        if (root == nullptr || A == nullptr || B == nullptr) return nullptr;
         vector<TreeNode *> la, lb;
-        if (!getpath(root, A, la) || !getpath(root, B, lb)) return NULL;
-        TreeNode *ans = NULL;
+        if (!getpath(root, A, la) || !getpath(root, B, lb)) return nullptr;
+        TreeNode *ans = nullptr;
         vector<TreeNode *>::const_iterator iter1 = la.begin();
         vector<TreeNode *>::const_iterator iter2 = lb.begin();
         while (iter1 != la.end() && iter2 != lb.end()) {
@@ -51,13 +51,13 @@ public:
         }
         return ans;
     }
-    
+
     bool getpath(TreeNode *root, TreeNode *t, vector<TreeNode *> &l) {
         l.push_back(root);
         if (root == t) return true;
-        if (root->left != NULL && getpath(root->left, t, l))
+        if (root->left != nullptr && getpath(root->left, t, l))
             return true;
-        if (root->right != NULL && getpath(root->right, t, l))
+        if (root->right != nullptr && getpath(root->right, t, l))
             return true;
         l.pop_back();
         return false;

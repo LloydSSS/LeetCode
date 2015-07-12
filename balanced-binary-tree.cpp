@@ -8,7 +8,7 @@ class Solution {
 public:
     bool ans;
     int getDepth(TreeNode *root) {
-        if (root == NULL)
+        if (root == nullptr)
             return 0;
         int left_depth = getDepth(root->left);
         int right_depth = getDepth(root->right);
@@ -21,7 +21,7 @@ public:
      * @return: True if this Binary tree is Balanced, or false.
      */
     bool isBalanced(TreeNode *root) {
-        if (root == NULL)
+        if (root == nullptr)
             return true;
         ans = true;
         getDepth(root);

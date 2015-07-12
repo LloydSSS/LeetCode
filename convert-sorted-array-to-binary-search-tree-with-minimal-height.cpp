@@ -21,7 +21,7 @@ public:
     TreeNode *left, *right;
     TreeNode(int val) {
         this->val = val;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 
@@ -36,7 +36,7 @@ public:
     }
 
     TreeNode *helper(vector<int> &A, int l, int r) {
-        if (l == r) return NULL;
+        if (l == r) return nullptr;
         if (l + 1 == r) return new TreeNode(A[l]);
         int m = (l+r)/2;
         TreeNode *root = new TreeNode (A[m]);

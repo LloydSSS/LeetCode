@@ -20,7 +20,7 @@ public:
     TreeNode *left, *right;
     TreeNode(int val) {
         this->val = val;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 
@@ -32,21 +32,21 @@ public:
      * @return: The root of the new binary search tree.
      */
     TreeNode* insertNode(TreeNode* root, TreeNode* node) {
-        if (root == NULL)
+        if (root == nullptr)
             return node;
         TreeNode *p = root;
         while (true) {
             if (p->val == node->val)
                 break;
             if (p->val > node->val) {
-                if (p->left == NULL) {
+                if (p->left == nullptr) {
                     p->left = node;
                     break;
                 }
                 p = p->left;
             }
             if (p->val < node->val) {
-                if (p->right == NULL) {
+                if (p->right == nullptr) {
                     p->right = node;
                     break;
                 }

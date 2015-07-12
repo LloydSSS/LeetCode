@@ -7,7 +7,7 @@ class Solution {
 public:
     char *m_pData;
     Solution() {
-        this->m_pData = NULL;
+        this->m_pData = nullptr;
     }
     Solution(char *pData) {
         this->m_pData = pData;
@@ -16,8 +16,8 @@ public:
     // Implement an assignment operator
     Solution& operator=(const Solution &object) {
         if (this != &object) {
-            char *tmp = NULL;
-            if (object.m_pData != NULL) {
+            char *tmp = nullptr;
+            if (object.m_pData != nullptr) {
                 tmp = new char[strlen(object.m_pData)+1];
                 strcpy(tmp, object.m_pData);
             }

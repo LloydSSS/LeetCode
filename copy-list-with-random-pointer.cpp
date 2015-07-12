@@ -13,7 +13,7 @@ using namespace std;
 struct RandomListNode {
     int label;
     RandomListNode *next, *random;
-    RandomListNode(int x) : label(x), next(NULL), random(NULL) {}
+    RandomListNode(int x) : label(x), next(nullptr), random(nullptr) {}
 };
 
 class Solution {
@@ -34,7 +34,7 @@ public:
         p = head;
         RandomListNode dummy(-1), *head2 = &dummy;
         while (p) {
-            if (p->random != NULL)
+            if (p->random != nullptr)
                 p->next->random = p->random->next;
             head2->next = p->next;
             head2 = head2->next;

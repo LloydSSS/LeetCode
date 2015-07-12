@@ -15,7 +15,7 @@ public:
      * @param target string containing the sequence of characters to match.
      */
     int strStr(const char *source, const char *target) {
-        if (source == NULL || target == NULL) return -1;
+        if (source == nullptr || target == nullptr) return -1;
         if (*target == '\0') return 0;
 
         int slen = strlen(source);

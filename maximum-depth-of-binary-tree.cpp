@@ -20,7 +20,7 @@ public:
     TreeNode *left, *right;
     TreeNode(int val) {
         this->val = val;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 
@@ -31,9 +31,9 @@ public:
      * @return: An integer
      */
     int maxDepth(TreeNode *root) {
-        if (root == NULL)
+        if (root == nullptr)
             return 0;
-        // if (root->left == NULL && root->right == NULL)
+        // if (root->left == nullptr && root->right == nullptr)
         //     return 1;
         return max(maxDepth(root->left), maxDepth(root->right)) + 1;
     }

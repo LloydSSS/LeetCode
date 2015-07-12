@@ -18,7 +18,7 @@ public:
     ListNode *next;
     ListNode(int val) {
         this->val = val;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -29,12 +29,12 @@ public:
      * @return: The head of linked list.
      */
     ListNode *insertionSortList(ListNode *head) {
-        if (head == NULL || head->next == NULL) return head;
+        if (head == nullptr || head->next == nullptr) return head;
         ListNode dummy(INT_MIN);
         ListNode *pre = &dummy;
         ListNode *cur = head;
-        while (cur != NULL) {
-            while (pre->next != NULL && pre->next->val < cur->val)
+        while (cur != nullptr) {
+            while (pre->next != nullptr && pre->next->val < cur->val)
                 pre = pre->next;
             ListNode *tmp = cur->next;
             cur->next = pre->next;

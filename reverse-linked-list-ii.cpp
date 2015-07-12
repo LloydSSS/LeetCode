@@ -18,7 +18,7 @@ public:
     ListNode *next;
     ListNode(int val) {
         this->val = val;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -45,7 +45,7 @@ public:
             pre->next = ne;
             i++;
         }
-        return dummy.next;    
+        return dummy.next;
     }
 };
 

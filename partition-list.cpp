@@ -16,7 +16,7 @@ public:
     ListNode *next;
     ListNode(int val) {
         this->val = val;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -28,12 +28,12 @@ public:
      * @return: a ListNode
      */
     ListNode *partition(ListNode *head, int x) {
-        if (head == NULL || head->next == NULL)
+        if (head == nullptr || head->next == nullptr)
             return head;
         ListNode dummy1(-1), dummy2(-1);
         ListNode *low = &dummy1, *high = &dummy2;
         ListNode *p = head;
-        while (p != NULL) {
+        while (p != nullptr) {
             if (p->val < x) {
                 low->next = p;
                 low = low->next;
@@ -44,7 +44,7 @@ public:
             p = p->next;
         }
         low->next = dummy2.next;
-        high->next = NULL;
+        high->next = nullptr;
         return dummy1.next;
     }
 };

@@ -20,7 +20,7 @@ public:
      * @return: The true length of new string
      */
     int replaceBlank(char *str, int length) {
-        if (str == NULL) return 0;
+        if (str == nullptr) return 0;
         int space_num = 0;
         for (int i = 0; i < length; ++i)
             if (str[i] == ' ') space_num++;
@@ -37,7 +37,7 @@ public:
         }
         return newlen;
     }
-};  
+};
 
 int main(int argc, char const *argv[]) {
     Solution sol;

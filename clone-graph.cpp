@@ -31,7 +31,7 @@ public:
      * @return: A undirected graph node
      */
     UndirectedGraphNode *cloneGraph(UndirectedGraphNode *node) {
-        if (node == NULL) return NULL;
+        if (node == nullptr) return nullptr;
         unordered_map<UndirectedGraphNode *, UndirectedGraphNode *> mp;
         stack<UndirectedGraphNode *> s;
         s.push(node);
@@ -39,7 +39,7 @@ public:
             UndirectedGraphNode *q = s.top();
             s.pop();
             UndirectedGraphNode *p;
-            if (mp[q] == NULL) {
+            if (mp[q] == nullptr) {
                 p = new UndirectedGraphNode(q->label);
                 mp[q] = p;
             } else
@@ -47,7 +47,7 @@ public:
             for (int i = 0; i < q->neighbors.size(); ++i) {
                 UndirectedGraphNode *qn = q->neighbors[i];
                 UndirectedGraphNode *pn;
-                if (mp[qn] == NULL) {
+                if (mp[qn] == nullptr) {
                     pn = new UndirectedGraphNode(qn->label);
                     mp[qn] = pn;
                     s.push(qn);

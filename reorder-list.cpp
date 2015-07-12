@@ -16,7 +16,7 @@ public:
     ListNode *next;
     ListNode(int val) {
         this->val = val;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -27,7 +27,7 @@ public:
     TreeNode *left, *right;
     TreeNode(int val) {
         this->val = val;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 
@@ -38,10 +38,10 @@ public:
      * @return: The new head of reversed linked list.
      */
     ListNode *reverse(ListNode *head) {
-        if (head == NULL || head->next == NULL)
+        if (head == nullptr || head->next == nullptr)
             return head;
-        ListNode *pre = NULL, *cur = head;
-        while (cur != NULL) {
+        ListNode *pre = nullptr, *cur = head;
+        while (cur != nullptr) {
             ListNode *ne = cur->next;
             cur->next = pre;
             pre = cur;
@@ -55,24 +55,24 @@ public:
      * @return: void
      */
     void reorderList(ListNode *head) {
-        if (head == NULL || head->next == NULL)
+        if (head == nullptr || head->next == nullptr)
             return;
 
         ListNode dummy(-1);
         dummy.next = head;
         ListNode *fast = &dummy, *slow = fast;
-        while (fast->next != NULL &&
-            fast->next->next != NULL) {
+        while (fast->next != nullptr &&
+            fast->next->next != nullptr) {
             fast = fast->next->next;
             slow = slow->next;
         }
         ListNode *head2 = slow->next;
-        slow->next = NULL;
+        slow->next = nullptr;
         head2 = reverse(head2);
 
         ListNode *p = head, *q = head2;
         ListNode *head3 = &dummy;
-        while (p != NULL && q != NULL) {
+        while (p != nullptr && q != nullptr) {
             head3->next = p;
             p = p->next;
             head3 = head3->next;
@@ -80,7 +80,7 @@ public:
             q = q->next;
             head3 = head3->next;
         }
-        head3->next = p == NULL ? q : p;
+        head3->next = p == nullptr ? q : p;
     }
 };
 

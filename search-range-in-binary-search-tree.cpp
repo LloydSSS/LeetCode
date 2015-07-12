@@ -21,7 +21,7 @@ public:
     TreeNode *left, *right;
     TreeNode(int val) {
         this->val = val;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 
@@ -34,12 +34,12 @@ public:
      */
     vector<int> searchRange(TreeNode* root, int k1, int k2) {
         vector<int> retv;
-        if (root == NULL) return retv;
-        
+        if (root == nullptr) return retv;
+
         stack<TreeNode*> st;
         st.push(root);
         while (!st.empty()) {
-            while (st.top()->left != NULL) {
+            while (st.top()->left != nullptr) {
                 st.push(st.top()->left);
             }
             TreeNode *p = st.top();

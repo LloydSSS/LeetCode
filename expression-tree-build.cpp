@@ -21,7 +21,7 @@ public:
     ExpressionTreeNode *left, *right;
     ExpressionTreeNode(string symbol) {
         this->symbol = symbol;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 

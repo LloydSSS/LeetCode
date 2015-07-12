@@ -21,7 +21,7 @@ public:
     TreeNode *left, *right;
     TreeNode(int val) {
         this->val = val;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 
@@ -32,8 +32,8 @@ public:
      * @return: nothing
      */
     void invertBinaryTree(TreeNode *root) {
-        if (root == NULL) return;
-        if (root->left == NULL && root->right == NULL) return;
+        if (root == nullptr) return;
+        if (root->left == nullptr && root->right == nullptr) return;
         TreeNode *pn = root->left;
         root->left = root->right;
         root->right = pn;

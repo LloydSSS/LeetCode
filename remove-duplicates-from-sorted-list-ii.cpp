@@ -19,7 +19,7 @@ public:
     ListNode *next;
     ListNode(int val) {
         this->val = val;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -30,13 +30,13 @@ public:
      * @return: head node
      */
     ListNode * deleteDuplicates(ListNode *head) {
-        if (head == NULL || head->next == NULL)
+        if (head == nullptr || head->next == nullptr)
             return head;
         ListNode dummy(-1);
         dummy.next = head;
         ListNode *p = &dummy, *q = head->next;
         bool flag = false;
-        while (q != NULL) {
+        while (q != nullptr) {
             if (p->next->val == q->val) {
                 flag = true;
                 ListNode *tmp = q;
@@ -64,14 +64,14 @@ public:
         return dummy.next;
     }
     ListNode * deleteDuplicates2(ListNode *head) {
-        if (head == NULL || head->next == NULL) return head;
+        if (head == nullptr || head->next == nullptr) return head;
         ListNode *dummy = new ListNode(0);
         dummy->next = head;
         ListNode *prev = dummy, *cur = prev->next;
-        while (cur != NULL && cur->next != NULL) {
+        while (cur != nullptr && cur->next != nullptr) {
             int v = cur->val;
             if (cur->next->val == v) {
-                while (cur != NULL && cur->val == v) {
+                while (cur != nullptr && cur->val == v) {
                     ListNode *tmp = cur;
                     cur = cur->next;
                     delete tmp;

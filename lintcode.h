@@ -8,6 +8,7 @@
 #define lintcode_h
 
 #include <iostream>
+#include <sstream>
 #include <vector>
 #include <string>
 #include <queue>
@@ -29,7 +30,7 @@ using namespace std;
 struct ListNode {
     int val;
     ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
+    ListNode(int x) : val(x), next(nullptr) {}
 };
 
 // Definition of TreeNode:
@@ -39,7 +40,7 @@ public:
     TreeNode *left, *right;
     TreeNode(int val) {
         this->val = val;
-        this->left = this->right = NULL;
+        this->left = this->right = nullptr;
     }
 };
 
