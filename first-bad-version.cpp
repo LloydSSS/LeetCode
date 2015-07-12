@@ -1,13 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/first-bad-version/
+// 二分查找，左闭右闭
+
+#include "lintcode.h"
 
 class VersionControl {
     public:
@@ -30,11 +24,11 @@ public:
      * @return: An integer which is the first bad version.
      */
     int findFirstBadVersion(int n) {
-        int l = 1, r = n+1;
+        int l = 1, r = n;
         while (l < r) {
             int m = (l+r) >> 1;
             if (VersionControl::isBadVersion(m))
-                r = m;
+                r = m-1;
             else
                 l = m+1;
         }

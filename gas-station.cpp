@@ -1,22 +1,14 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <set>
-#include <string>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/gas-station/
+// 贪心，sum表示总的汽油量减消耗量，local_sum表示从ans开始的结果，如果sum>=0则一定可以完成，起点可以是任意可以使local_sum>=0的开始节点
+
+#include "lintcode.h"
 
 class Solution {
 public:
     /**
      * @param gas: a vector of integers
      * @param cost: a vector of integers
-     * @return: an integer 
+     * @return: an integer
      */
     int canCompleteCircuit(vector<int> &gas, vector<int> &cost) {
         int ans = 0;

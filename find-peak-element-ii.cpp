@@ -1,16 +1,8 @@
 // http://www.lintcode.com/en/problem/find-peak-element-ii/
 // T(m, n) = T(m, n / 2) + O(m) = T(m / 2, n / 2) + O(m) + O(n / 2) = ... = O(2m) + O(2n) = O(max(m, n))
 // 两个方向二分,统计中点及两侧的最大值，进行比较，判断峰值一定在哪里
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

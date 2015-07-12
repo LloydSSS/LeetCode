@@ -1,13 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/find-minimum-in-rotated-sorted-array/
+// 二分查找, 左闭右闭
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -19,12 +13,16 @@ public:
         int l = 0, r = num.size()-1;
         while (l < r) {
             int m = (l+r) >> 1;
-            if (num[l] > num[m])
-                r = m;
-            else if (num[m] > num[r])
+            if (num[m] > num[r])
                 l = m+1;
             else
-                break;
+                r = m;
+            // if (num[l] > num[m])
+            //     r = m;
+            // else if (num[m] > num[r])
+            //     l = m+1;
+            // else
+            //     break;
         }
         return num[l];
     }

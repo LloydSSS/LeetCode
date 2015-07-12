@@ -1,30 +1,7 @@
 // http://www.lintcode.com/en/problem/find-the-connected-component-in-the-undirected-graph/
-// BFS，水
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// BFS
 
-// Definition for Undirected graph.
-class UndirectedGraphNode {
-public:
-    int label;
-    vector<UndirectedGraphNode *> neighbors;
-
-    UndirectedGraphNode(int x) : label(x) {};
-};
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -60,7 +37,6 @@ public:
         return ans;
     }
 };
-
 
 int main(int argc, char const *argv[]) {
     Solution sol;
