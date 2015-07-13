@@ -1,19 +1,8 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/word-ladder/
+// bfs搜索, 同时建立反向路径，再dfs搜索，寻找路径
+// http://www.tuicool.com/articles/eaQNNr
+
+#include "lintcode.h"
 
 class Solution {
 public:
