@@ -1,19 +1,7 @@
 // http://www.lintcode.com/en/problem/minimum-path-sum/
-// 水dp
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// dp[i][j]表示到(i, j)的最小路径和
+
+#include "lintcode.h"
 
 class Solution {
 public:

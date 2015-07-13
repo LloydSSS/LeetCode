@@ -1,26 +1,7 @@
 // http://www.lintcode.com/en/problem/reverse-linked-list-ii/
 // 使用头插法比较简单
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
 
-// Definition of ListNode
-class ListNode {
-public:
-    int val;
-    ListNode *next;
-    ListNode(int val) {
-        this->val = val;
-        this->next = nullptr;
-    }
-};
+#include "lintcode.h"
 
 class Solution {
 public:

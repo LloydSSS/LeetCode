@@ -1,13 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/merge-sorted-array-ii/
+// 从前向后比较
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -27,8 +21,6 @@ public:
         return retv;
     }
 };
-
-
 
 int main(int argc, char const *argv[]) {
 	Solution sol;

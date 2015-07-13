@@ -1,19 +1,9 @@
 // Majority Number II
 // http://www.lintcode.com/en/problem/majority-number-ii/
+// https://leetcode.com/problems/majority-element-ii/
 // 三三抵消，注意最后要重新统计一次
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -25,17 +15,17 @@ public:
         int cand1, cand2;
         int cnt1 = 0, cnt2 = 0;
         for (int i = 0; i < nums.size(); ++i) {
-            if (cnt1 == 0)
+            if (cnt1 == 0 || cand1 == nums[i]) {
                 cand1 = nums[i];
-            if (cnt2 == 0 && cand1 != nums[i])
-                cand2 = nums[i];
-            if (cnt1 != 0 && cnt2 != 0 && cand1 != nums[i] && cand2 != nums[i])
-                cnt1--, cnt2--;
-            if (cand1 == nums[i])
                 cnt1++;
-            if (cand2 == nums[i])
+            } else if (cnt2 == 0 || cand2 == nums[i]) {
+                cand2 = nums[i];
                 cnt2++;
+            } else {
+                cnt1--, cnt2--;
+            }
         }
+
         cnt1 = cnt2 = 0;
         for (int i = 0; i < nums.size(); ++i) {
             if (cand1 == nums[i])

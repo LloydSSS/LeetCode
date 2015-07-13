@@ -1,18 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/permutations/
+// dfs
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -25,6 +14,7 @@ public:
         dfs(nums, 0);
         return ans;
     }
+
     vector<vector<int> > ans;
     void dfs(vector<int> perm, int i) {
         if (i == perm.size()) {

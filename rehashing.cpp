@@ -1,32 +1,7 @@
 // http://www.lintcode.com/en/problem/rehashing/
-// 水
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// 拉链法
 
-
-// Definition of ListNode
-class ListNode {
-public:
-    int val;
-    ListNode *next;
-    ListNode(int val) {
-        this->val = val;
-        this->next = nullptr;
-    }
-};
+#include "lintcode.h"
 
 class Solution {
 public:

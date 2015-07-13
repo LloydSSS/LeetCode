@@ -6,20 +6,8 @@
 // 这样时间复杂度为O(kn2)，还可以继续优化
 // 当我们计算完i，计算i+1时，sumBetween(ii+1, i)变成了sumBetween(ii+1, i+1)，实际上只多了一个数，所以我们可以不每次都计算一次。之前的最大的值，到新的还是原来所组合的最大值，只需要和新加的比一下就可以了，所以这个值我们从最左边向右边扫一遍一直维护是可行的，并且只需要维护一个变量local_max而不是数组。
 // http://hehejun.blogspot.com/2015/01/lintcodemaximum-subarray-iii.html
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

@@ -1,13 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/partition-array-by-odd-and-even/
+// partation
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -26,8 +20,6 @@ public:
 
 
 int main(int argc, char const *argv[]) {
-
 	Solution sol;
-
 	return 0;
 }

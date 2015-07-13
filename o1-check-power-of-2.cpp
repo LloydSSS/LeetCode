@@ -1,5 +1,7 @@
-#include <iostream>
-using namespace std;
+// http://www.lintcode.com/en/problem/o1-check-power-of-2/
+// 注意非正数的处理
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -8,17 +10,14 @@ public:
      * @return: True or false
      */
     bool checkPowerOf2(int n) {
-        // write your code here
         if (n <= 0) return false;
         cout << (n&(n-1)) << endl;
         return (n&(n-1)) == 0;
     }
 };
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]) {
 	Solution sol;
 	cout << sol.checkPowerOf2(4) << endl;
-	/* code */
 	return 0;
 }

@@ -4,22 +4,8 @@
 // dis[i][j]表示村庄i到村庄j之间建一个邮局的花费(花费为邮局到每个村庄的距离)
 // 可以证明，当仅建立一个邮局时，最优解出现在中位数
 // dis[i][j] = dis[i][j-1] + A[j] - A[(i+j)/2]
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -49,7 +35,6 @@ public:
                     dp[i][j] = min(dp[i][j], dp[l][j-1]+dis[l+1][i]);
             }
         }
-
         return dp[n-1][k-1];
     }
 };

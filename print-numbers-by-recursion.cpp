@@ -1,14 +1,7 @@
-#include <iostream>
-#include <sstream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/print-numbers-by-recursion/
+// dfs
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -35,7 +28,7 @@ public:
             dfs(num, idx+1, n);
         }
     }
-    
+
     int atoi(const string &s) {
         int i;
         stringstream ss;
@@ -46,13 +39,10 @@ public:
 };
 
 int main(int argc, char const *argv[]) {
-
 	Solution sol;
     std::vector<int> v;
-    
     v = sol.numbersByRecursion(2);
-    for (int i = 0; i < v.size(); ++i)
-    {
+    for (int i = 0; i < v.size(); ++i) {
         cout << v[i] << endl;
     }
 	return 0;

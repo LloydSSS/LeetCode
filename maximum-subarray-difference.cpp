@@ -1,19 +1,7 @@
 // http://www.lintcode.com/zh-cn/problem/maximum-subarray-difference/
-//
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// 纪录lmax, lmin, rmax, rmin分别表示从左或从右边开始以i结尾的最大子数组和最小子数组和
+
+#include "lintcode.h"
 
 class Solution {
 public:

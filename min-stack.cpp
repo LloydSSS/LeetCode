@@ -1,18 +1,8 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/min-stack/
+// 使用另外一个栈纪录最小值，如果新压栈的元素比栈顶元素小，则压栈
+// 弹栈时如果该元素等于最小栈的栈顶元素，则最小栈也弹栈
+
+#include "lintcode.h"
 
 class MinStack {
 public:

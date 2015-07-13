@@ -1,17 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/n-queens-ii/
+// 非递归版好麻烦
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -70,7 +60,6 @@ public:
                         if (y)
                             y--;
                         x = tran[y]+1;
-
                     } else {
                         x = 0;
                         y++;

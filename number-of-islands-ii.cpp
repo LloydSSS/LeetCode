@@ -1,30 +1,7 @@
 // http://www.lintcode.com/en/problem/number-of-islands/
-// 并查集
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <unordered_map>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// 并查集，每个操作来到时候，查看其相邻元素岛屿的数量
 
-// Definition for a point.
-struct Point {
-    int x;
-    int y;
-    Point() : x(0), y(0) {}
-    Point(int a, int b) : x(a), y(b) {}
-};
+#include "lintcode.h"
 
 class Solution {
 public:

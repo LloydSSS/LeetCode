@@ -1,17 +1,9 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/minimum-adjustment-cost/
+// dp[i,j] 表示第i个元素调整到j时的最小cost
+// for each dp[i][j], minimum cost = minimum cost dp[i-1][j-target ... j+target] + abs(A[i]-j)
+// 所以用三重循环，i，j，j-target...j+target
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -23,21 +15,21 @@ public:
         int n = A.size();
         if (n <= 1) return 0;
         vector<vector<int> > dp(n, vector<int>(101, INT_MAX));
-        for (int i = 1; i <= 100; ++i)
-            dp[0][i] = abs(i-A[0]);
-        for (int j = 1; j < n; ++j) {
-            for (int i = 1; i <= 100; ++i) {
-                int diff = abs(i-A[j]);
-                int upper = min(i+target,100);
-                int lower = max(i-target,1);
+        for (int j = 1; j <= 100; ++j)
+            dp[0][j] = abs(j-A[0]);
+        for (int i = 1; i < n; ++i) {
+            for (int j = 1; j <= 100; ++j) {
+                int diff = abs(j-A[i]);
+                int upper = min(j+target,100);
+                int lower = max(j-target,1);
                 for(int k = lower; k <= upper; ++k) {
-                    dp[j][i] = min(dp[j][i], dp[j-1][k]+diff);
+                    dp[i][j] = min(dp[i][j], dp[i-1][k]+diff);
                 }
             }
         }
         int ans = INT_MAX;
-        for (int i = 1; i <= 100; ++i) {
-            ans = min(dp[n-1][i], ans);
+        for (int j = 1; j <= 100; ++j) {
+            ans = min(dp[n-1][j], ans);
         }
         return ans;
     }

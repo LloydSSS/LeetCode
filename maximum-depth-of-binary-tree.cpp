@@ -1,28 +1,6 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/
 
-
-// Definition of TreeNode:
-class TreeNode {
-public:
-    int val;
-    TreeNode *left, *right;
-    TreeNode(int val) {
-        this->val = val;
-        this->left = this->right = nullptr;
-    }
-};
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -39,9 +17,7 @@ public:
     }
 };
 
-
 int main(int argc, char const *argv[]) {
     Solution sol;
-
     return 0;
 }

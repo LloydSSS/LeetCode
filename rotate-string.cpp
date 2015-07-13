@@ -1,19 +1,9 @@
 // Rotate String
 // http://www.lintcode.com/en/problem/rotate-string/
 // a. 三次翻转
-// b. 直接计算便宜
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// b. 直接计算偏移
+
+#include "lintcode.h"
 
 class Solution {
 public:

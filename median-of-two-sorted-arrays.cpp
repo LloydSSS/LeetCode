@@ -10,17 +10,8 @@
     当k=1是,返回min(A[0],B[0]);
     当A[k/2-1]==B[k/2-1]时,返回A[k/2-1]或B[k/2-1]
 */
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <unordered_map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

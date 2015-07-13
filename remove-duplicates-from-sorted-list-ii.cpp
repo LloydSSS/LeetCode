@@ -1,27 +1,8 @@
 // http://www.lintcode.com/en/problem/remove-duplicates-from-sorted-list-ii/
 // a.设置标志删除重复元素的第一个
 // b.跳过所有与当前值重复的元素
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
 
-// Definition of ListNode
-class ListNode {
-public:
-    int val;
-    ListNode *next;
-    ListNode(int val) {
-        this->val = val;
-        this->next = nullptr;
-    }
-};
+#include "lintcode.h"
 
 class Solution{
 public:
@@ -63,6 +44,7 @@ public:
         }
         return dummy.next;
     }
+
     ListNode * deleteDuplicates2(ListNode *head) {
         if (head == nullptr || head->next == nullptr) return head;
         ListNode *dummy = new ListNode(0);

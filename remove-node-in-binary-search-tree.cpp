@@ -1,29 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/remove-node-in-binary-search-tree/
+// 设置一个伪根，删除节点为根节点时不用特殊处理，递归调用removeNodeHelper，当发现匹配的值时，如果左右子树有一个为空，则直接把另一个子树提升上来；否则，把右子树上移，左子树作为右子树的左子树，右子树原先的左子树放在原先左子树的右子树的最右边
 
-
-// Definition of TreeNode:
-class TreeNode {
-public:
-    int val;
-    TreeNode *left, *right;
-    TreeNode(int val) {
-        this->val = val;
-        this->left = this->right = nullptr;
-    }
-};
+#include "lintcode.h"
 
 class Solution {
 public:

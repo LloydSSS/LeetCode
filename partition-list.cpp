@@ -1,24 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/partition-list/
+// 用两个链表分别存储，反而简单了
 
-// Definition of ListNode
-class ListNode {
-public:
-    int val;
-    ListNode *next;
-    ListNode(int val) {
-        this->val = val;
-        this->next = nullptr;
-    }
-};
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -49,10 +32,7 @@ public:
     }
 };
 
-
 int main(int argc, char const *argv[]) {
-
 	Solution sol;
-
 	return 0;
 }

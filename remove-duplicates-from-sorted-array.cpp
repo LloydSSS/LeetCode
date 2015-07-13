@@ -1,13 +1,8 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// Remove Duplicates from Sorted Array
+// http://www.lintcode.com/en/problem/remove-duplicates-from-sorted-array
+// 水
+
+#include "lintcode.h"
 
 class Solution {
 public:

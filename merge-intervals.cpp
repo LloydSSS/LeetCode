@@ -1,29 +1,7 @@
 // http://www.lintcode.com/zh-cn/problem/merge-intervals/
-// 水
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// 排序后依次合并
 
-// Definition of Interval:
-class Interval{
-public:
-    int start, end;
-    Interval(int start, int end) {
-        this->start = start;
-        this->end = end;
-    }
-};
+#include "lintcode.h"
 
 bool cmp(const Interval &a, const Interval &b) {
     if (a.start == b.start)

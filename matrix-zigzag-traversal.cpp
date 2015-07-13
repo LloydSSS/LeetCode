@@ -1,15 +1,7 @@
 // http://www.lintcode.com/zh-cn/problem/matrix-zigzag-traversal/
-// dp+dfs
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// 模拟
+
+#include "lintcode.h"
 
 class Solution {
 public:

@@ -1,20 +1,8 @@
 // Majority Number III
 // http://www.lintcode.com/en/problem/majority-number-iii/
 // k抵消，注意最后要重新统计一次
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <unordered_map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

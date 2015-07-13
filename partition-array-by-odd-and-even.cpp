@@ -1,13 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/partition-array-by-odd-and-even/
+// partation
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -27,19 +21,11 @@ public:
     }
 };
 
-
 int main(int argc, char const *argv[]) {
-
 	Solution sol;
-    std::vector<int> v;
-    int a[7] = {1,2,3,4,5,6,7};
-    for (int i = 0; i < 7; ++i)
-    {
-        v.push_back(a[i]);
-    }
+    std::vector<int> v = {1,2,3,4,5,6,7};
     sol.partitionArray(v);
-    for (int i = 0; i < v.size(); ++i)
-    {
+    for (int i = 0; i < v.size(); ++i) {
         cout << v[i] << endl;
     }
 	return 0;

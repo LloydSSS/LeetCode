@@ -1,13 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/product-of-array-exclude-itself/
+// 计算从左向右，以及从右向左的product
+
+#include "lintcode.h"
 
 class Solution {
 public:
