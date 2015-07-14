@@ -1,6 +1,7 @@
 // Sliding Window Maximum
 // http://www.lintcode.com/en/problem/sliding-window-median
 // a. 优先队列，保存一个窗口的最大值，每次弹出时，同时弹出队首不在窗口内的元素
+
 #include "lintcode.h"
 
 class Solution {

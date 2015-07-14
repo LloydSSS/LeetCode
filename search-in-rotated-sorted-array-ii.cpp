@@ -1,16 +1,9 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
-
+// http://www.lintcode.com/en/problem/search-in-rotated-sorted-array/
 // plan 1: 直接二分
 // plan 2: 先找到转折点，再二分
+
+#include "lintcode.h"
+
 class Solution {
     /**
      * param A : an integer ratated sorted array and duplicates are allowed

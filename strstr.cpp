@@ -1,10 +1,8 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/strstr/
+// 暴力匹配
+// kmp
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -41,6 +39,5 @@ public:
 int main(int argc, char const *argv[]) {
 	Solution sol;
 	cout << sol.strStr("aabb", "ab") << endl;
-	/* code */
 	return 0;
 }

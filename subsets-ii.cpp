@@ -1,18 +1,10 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/subsets/
+// 先排序，以便去重
+// 递归，每个元素都有两种状态，取或者不取
+// 非递归，构造法，先构造0个元素的，再在这个基础上构造有第一个元素的subset，以此类推
+// 与没有重复元素不同的是：需要判断如果新元素和上一个元素相等，则只添加添加过上个元素的subset
+
+#include "lintcode.h"
 
 class Solution {
 public:

@@ -22,6 +22,7 @@
 #include <cmath>
 #include <cstring>
 #include <cstdlib>
+#include <numeric>
 #include <algorithm>
 #include <utility>
 using namespace std;

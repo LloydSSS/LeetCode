@@ -1,17 +1,8 @@
 // http://www.lintcode.com/en/problem/subarray-sum/
 // a. Time:O(n2) Space:O(n) 枚举头指针和尾指针
 // b. Time:O(n2) Space:O(n) 子数组等于两个从头开始的数组的差，使用hashmap纪录从头开始数组的和及他们的下标，当有遇到和存在在hashmap的时候表明有两个从头开始的数组和相等，即，差为0
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <unordered_map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

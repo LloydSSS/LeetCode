@@ -1,19 +1,7 @@
 // http://www.lintcode.com/en/problem/simplify-path/
 // stack
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

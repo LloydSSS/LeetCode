@@ -1,18 +1,8 @@
 // Single Number II
 // http://www.lintcode.com/en/problem/single-number-ii/
 // a. xsum = a^b，根据xsum中不为0的一位将A分为两部分，a,b分别在两部分
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <set>
-#include <string>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

@@ -1,22 +1,8 @@
 // Sliding Window Maximum
 // http://www.lintcode.com/en/problem/sliding-window-maximum/
 // a. 优先队列，保存一个窗口的最大值，每次弹出时，同时弹出队首不在窗口内的元素
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

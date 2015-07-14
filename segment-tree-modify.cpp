@@ -1,22 +1,7 @@
 // http://www.lintcode.com/en/problem/segment-tree-query/
-// 水
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// 线段树修改
 
-
+#include "lintcode.h"
 
 // Definition of SegmentTreeNode:
 class SegmentTreeNode {

@@ -1,16 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/singleton/
+// 单例模式
+
+#include "lintcode.h"
 
 class Solution
 {
@@ -31,9 +22,5 @@ Solution *Solution::m_pInstance = nullptr;
 
 int main(int argc, char const *argv[]) {
     Solution* sol = Solution::getInstance();
-    char s[100] = "hello";
-    char t[100] = "world";
-    swap(s, t);
-    cout << t << s << endl;
     return 0;
 }

@@ -1,19 +1,7 @@
 // http://www.lintcode.com/en/problem/set-matrix-zeroes/
-//
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// 使用第一行第一列来标记，需要使用两个元素来标记第一行第一列是否需要被设为0
+
+#include "lintcode.h"
 
 class Solution {
 public:

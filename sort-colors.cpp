@@ -1,20 +1,8 @@
 // http://www.lintcode.com/zh-cn/problem/maximum-subarray-difference/
 // a. two-pass count
 // b. one-pass two-pointer
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution{
 public:

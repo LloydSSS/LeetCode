@@ -1,16 +1,5 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/space-replacement/
+// 先计算出新字符串的长度，然后从后向前替换
 
 class Solution {
 public:

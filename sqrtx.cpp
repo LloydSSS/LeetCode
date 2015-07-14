@@ -1,13 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/sqrtx/
+// 二分查找
+
+#include "lintcode.h"
 
 class Solution {
 public:

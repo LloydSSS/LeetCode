@@ -1,21 +1,7 @@
 // http://www.lintcode.com/en/problem/sort-letters-by-case/
 // two pointers, 水
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

@@ -1,18 +1,8 @@
 // http://www.lintcode.com/en/problem/subarray-sum-ii/
 // a. Time:O(n2) Space:O(n) 先求出前缀和，然后枚举求两个前缀和的差
 // b. Time:O(nlogn) Space:O(n) 先求出前缀和，然后二分找出上界下界，前提是数组非负
-#include <iostream>
-#include <algorithm>
-#include <numeric>
-#include <vector>
-#include <map>
-#include <unordered_map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

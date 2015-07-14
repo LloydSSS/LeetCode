@@ -2,18 +2,8 @@
 // http://www.lintcode.com/en/problem/single-number-ii/
 // a. 使用一个数组统计每位出现的次数，模3等于1的位则为single num
 // b. 模拟三进制运算
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <set>
-#include <string>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

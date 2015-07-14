@@ -1,15 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <set>
-#include <string>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/single-number/
+// 相同数字异或为0
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -21,7 +13,7 @@ public:
     	if (A.size() == 0) return 0;
         int ans = A[0];
         for (int i = 1; i < A.size(); ++i)
-        	ans ^= A[i]
+        	ans ^= A[i];
         return ans;
     }
 };

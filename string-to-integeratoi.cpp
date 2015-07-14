@@ -1,16 +1,8 @@
 // String to Integer(atoi)
 // http://www.lintcode.com/en/problem/string-to-integeratoi/
 // 注意边界情况，一遍AC有难度
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:
@@ -33,7 +25,7 @@ public:
         } else if (idx < len && str[idx] == '+') {
             flag = 1;
             idx++;
-        }        
+        }
         while (idx < len && str[idx] >= '0' && str[idx] <= '9') {
             num = num*10 + str[idx] - '0';
             if (flag == 1 && num >= INT_MAX)

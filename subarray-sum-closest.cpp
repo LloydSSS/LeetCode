@@ -1,16 +1,8 @@
 // Subarray Sum Closest
 // http://www.lintcode.com/en/problem/subarray-sum-closest/
 // 使用sums存储0~i之间的和，以及i，然后对sums进行排序，相邻元素的差即是一段区间内的和，非相邻元素的差肯定大于相邻元素，顺序扫描即可
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:
