@@ -1,16 +1,8 @@
 // http://www.lintcode.com/zh-cn/problem/valid-number/
 // a. 状态机
 // b. 条件判断
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

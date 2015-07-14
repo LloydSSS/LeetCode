@@ -1,17 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/triangle/
+// 最小路径和，dp基础题
+
+#include "lintcode.h"
 
 class Solution {
 public:

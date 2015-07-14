@@ -1,27 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/topological-sorting/
+// bfs拓扑排序，记录每个点的入度，将入度为0的加入队列
 
-
-// Definition for Directed graph.
-struct DirectedGraphNode {
-    int label;
-    vector<DirectedGraphNode *> neighbors;
-    DirectedGraphNode(int x) : label(x) {};
-};
+#include "lintcode.h"
 
 class Solution {
 public:

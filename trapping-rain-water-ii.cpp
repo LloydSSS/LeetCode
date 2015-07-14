@@ -1,18 +1,7 @@
-// http://www.lintcode.com/zh-cn/problem/trapping-rain-water/
-// O(n), O(n)   a.使用两个数组纪录每个位置左右的最高点，然后进行计算
-// O(n), O(1)   b.两边往中间遍历，最高点不变，使用一个变量纪录第二高点，计算较低位置可以trap的雨量secHeight-heights[lower];
-// O(n), O(1)   c.两遍遍历，从左向右，纪录最高的index，并纪录最高index到目前为止的block大小，如果遇到比最高index高的，则计算到目前为止trap的雨量；这样最高点往右的位置无法计算，需要从右向左遍历
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <queue>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/zh-cn/problem/trapping-rain-water-ii/
+// 使用一个堆维护坐标高度，从四周向中间蔓延，每次取最低点进行计算，寻找四周比它还低的点（只有这些点可以保存雨水，其他店都会流出去）
+
+#include "lintcode.h"
 
 class Solution {
 public:

@@ -1,13 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/unique-paths/
+// dp[i,j]表示到达(i,j)的路径数
+
+#include "lintcode.h"
 
 class Solution {
 public:

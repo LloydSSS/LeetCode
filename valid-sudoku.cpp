@@ -1,15 +1,7 @@
 // http://www.lintcode.com/zh-cn/problem/valid-sudoku/
-// 水
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// 检查column，row，block
+
+#include "lintcode.h"
 
 class Solution {
 public:

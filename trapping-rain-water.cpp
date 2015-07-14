@@ -2,16 +2,8 @@
 // O(n), O(n)   a.使用两个数组纪录每个位置左右的最高点，然后进行计算
 // O(n), O(1)   b.两边往中间遍历，最高点不变，使用一个变量纪录第二高点，计算较低位置可以trap的雨量secHeight-heights[lower];
 // O(n), O(1)   c.两遍遍历，从左向右，纪录最高的index，并纪录最高index到目前为止的block大小，如果遇到比最高index高的，则计算到目前为止trap的雨量；这样最高点往右的位置无法计算，需要从右向左遍历
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:

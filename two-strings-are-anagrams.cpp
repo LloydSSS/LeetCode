@@ -1,6 +1,5 @@
-#include <iostream>
-#include <vector>
-using namespace std;
+// http://www.lintcode.com/en/problem/two-strings-are-anagrams/
+// 统计每个字符出现的次数，完全匹配则是anagrams
 
 class Solution {
 public:
@@ -25,10 +24,8 @@ public:
     }
 };
 
-
 int main(int argc, char const *argv[]) {
 	Solution sol;
 	cout << sol.anagram("aabb", "bbaa") << endl;
-	/* code */
 	return 0;
 }

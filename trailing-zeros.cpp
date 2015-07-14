@@ -1,13 +1,8 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/trailing-zeros/
+// a.寻找5的因数的个数
+// b.转化成字符串然后后项遍历
+
+#include "lintcode.h"
 
 class Solution {
  public:

@@ -1,14 +1,7 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/update-bits/
+// 先设置mask，然后进行|操作，注意int 左移32位无定义
+
+#include "lintcode.h"
 
 class Solution {
 public:

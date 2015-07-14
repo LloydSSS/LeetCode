@@ -1,14 +1,8 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <string>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/unique-binary-search-trees/
+// dp[i] 表示i个节点可以组成的bst的数量
+// dp[i] = ∑(dp[j]*dp[i-j-1])
+
+#include "lintcode"
 
 class Solution {
 public:
@@ -32,8 +26,6 @@ public:
 
 int main(int argc, char const *argv[]) {
 	Solution sol;
-
 	cout << sol.numTrees(3) << endl;
-
 	return 0;
 }

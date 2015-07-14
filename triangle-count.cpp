@@ -1,20 +1,8 @@
 // http://www.lintcode.com/en/problem/triangle-count/
 // a.排序，遍历最长边与最短边，二分查找中间边
 // b.three-pointers
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lintcode.h"
 
 class Solution {
 public:
