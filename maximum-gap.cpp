@@ -9,7 +9,7 @@
 // For each non-empty buckets p, find the next non-empty buckets q, then q.min - p.max could be the potential answer to the question. Return the maximum of all those values.
 // 注意最大值最小值相等时size＝0，需要特殊判断
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

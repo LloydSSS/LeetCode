@@ -13,7 +13,7 @@ Divide the list of buildings into two halves. Recursively get the skyline of bot
 Be warned, my friend, thou art about to do some serious coding should thou dare this path. Dauntlessly define thy classes and meticulously do thy math. Listen to the prophecy if thou must, but do not let thy own sword idle with rust. By the journey's end, may thy toil and sweat be duly repaid, and no more interviews shalt thou again be afraid.
 */
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

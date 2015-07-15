@@ -1,7 +1,7 @@
 // http://www.lintcode.com/zh-cn/problem/trapping-rain-water-ii/
 // 使用一个堆维护坐标高度，从四周向中间蔓延，每次取最低点进行计算，寻找四周比它还低的点（只有这些点可以保存雨水，其他店都会流出去）
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

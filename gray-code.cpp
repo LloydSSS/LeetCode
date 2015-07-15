@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/gray-code/
+// https://leetcode.com/problems/gray-code/
 /*
 自然二进制码转换为格雷码:g0 = b0 , gi = bi ⊕ bi−1 保留自然二进制码的最高位作为格雷码的最高位,格雷码次高位为二进制码的高位与次高位异
 或,其余各位与次高位的求法类似。例如,将自然二进制码 1001,转换为格雷码的过程是:保留最 高位;然后将第 1 位的 1 和第 2 位的 0 异或,得到 1,作为格雷码的第 2 位;将第 2 位的 0 和第 3 位 的 0 异或,得到 0,作为格雷码的第 3 位;将第 3 位的 0 和第 4 位的 1 异或,得到 1,作为格雷码的 第 4 位,最终,格雷码为 1101。
@@ -11,7 +12,7 @@
 
  */
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -2,7 +2,7 @@
 // plan 1: 直接二分
 // plan 2: 先找到转折点，再二分
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
     /**

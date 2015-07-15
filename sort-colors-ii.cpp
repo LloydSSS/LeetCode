@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/sort-colors-ii/
 // 桶排序，使用0～k-1作为buckets，使用负数进行计数
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution{
 public:

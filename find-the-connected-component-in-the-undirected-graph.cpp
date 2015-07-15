@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/find-the-connected-component-in-the-undirected-graph/
 // BFS
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

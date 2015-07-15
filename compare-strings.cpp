@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/compare-strings/
 // 使用一个hash table来计数。判断是否A的所有字母计数都大于B
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:
@@ -33,16 +33,5 @@ public:
 
 int main(int argc, char const *argv[]) {
 	Solution sol;
-	std::vector<string> v;
-	v.push_back("lint");
-	v.push_back("intl");
-	v.push_back("inlt");
-	v.push_back("code");
-	std::vector<string> res = sol.anagrams(v);
-	for (int i = 0; i < res.size(); ++i) {
-		cout << res[i] << endl;
-	}
-	//cout << sol.compareStrings("ABCD", "ABCA") << endl;
-	/* code */
 	return 0;
 }

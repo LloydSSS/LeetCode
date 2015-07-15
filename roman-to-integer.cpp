@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/integer-to-roman/
 // 将900，400等需要特殊处理的都放进字典里面
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

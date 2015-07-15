@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/interleaving-string/
+// https://leetcode.com/problems/interleaving-string/
 // dp[i,j]表示s3[0~i+j-1]是否是有s1[0~i-1]和s2[0~j-1]组成的
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

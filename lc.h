@@ -1,11 +1,11 @@
 //
-//  lintcode.h
+//  lc.h
 //
 //  Created by LloydYan on 15/7/10.
 //  Copyright (c) 2015年 LloydYan. All rights reserved.
 //
-#ifndef lintcode_h
-#define lintcode_h
+#ifndef lc_h
+#define lc_h
 
 #include <iostream>
 #include <sstream>

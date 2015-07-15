@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/median-of-two-sorted-arrays/
+// https://leetcode.com/problems/median-of-two-sorted-arrays/
 // a. Time:O(logn) Space:O(1)
 /* 假设 A 和 B 的元素个数都大于 k/2,我们将 A 的第 k/2 个元素(即 A[k/2-1])和 B 的第 k/2 个元素(即 B[k/2-1])进行比较,有以下三种情况(为了简化这里先假设 k 为偶数,所得到的结论 对于 k 是奇数也是成立的):
     A[k/2-1] == B[k/2-1] • A[k/2-1] > B[k/2-1] • A[k/2-1] < B[k/2-1]
@@ -11,7 +12,7 @@
     当A[k/2-1]==B[k/2-1]时,返回A[k/2-1]或B[k/2-1]
 */
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

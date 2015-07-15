@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/set-matrix-zeroes/
 // 使用第一行第一列来标记，需要使用两个元素来标记第一行第一列是否需要被设为0
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -1,7 +1,7 @@
 // http://www.lintcode.com/zh-cn/problem/coins-in-a-line/
 // 110110110110...如果n前两个状态为11则，n为0，否则n为1，1代表先手必胜
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/number-of-islands/
 // 并查集，每个操作来到时候，查看其相邻元素岛屿的数量
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

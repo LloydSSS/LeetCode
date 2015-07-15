@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/triangle/
 // 最小路径和，dp基础题
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

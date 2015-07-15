@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/insert-node-in-a-binary-search-tree/
 // bst查找
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

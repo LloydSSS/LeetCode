@@ -1,6 +1,7 @@
 // http://www.lintcode.com/en/problem/distinct-subsequences/
+// https://leetcode.com/problems/distinct-subsequences/
 // dp[i][j] 表示s[0~i],t[0~j]间distinct subsequences的个数
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

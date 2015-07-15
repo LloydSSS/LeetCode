@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/longest-common-substring/
 // dp[i,j] 表示A[0~i-1],B[0~j-1]之间的LCS的长度
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

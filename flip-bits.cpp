@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/flip-bits/
 // 寻找a^b中1的个数
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -2,7 +2,7 @@
 // http://www.lintcode.com/en/problem/single-number-ii/
 // a. xsum = a^b，根据xsum中不为0的一位将A分为两部分，a,b分别在两部分
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

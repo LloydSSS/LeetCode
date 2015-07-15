@@ -2,7 +2,7 @@
 // Time:O(n), Space:O(n)
 // dp, 分情况讨论，无环情况和1是一样的，有环情况则从两端开始扩展，再遍历分界点
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

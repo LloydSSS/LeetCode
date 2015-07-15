@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/combination-sum/
+// https://leetcode.com/problems/combination-sum/
 // dfs+剪枝
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

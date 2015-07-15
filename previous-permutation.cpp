@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/previous-permuation/
 // 和next同理
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

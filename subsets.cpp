@@ -3,7 +3,7 @@
 // 递归，每个元素都有两种状态，取或者不取
 // 非递归，构造法，先构造0个元素的，再在这个基础上构造有第一个元素的subset，以此类推
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

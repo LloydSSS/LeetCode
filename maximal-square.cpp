@@ -3,7 +3,7 @@
 // dp[i][j]表示以i，j为右下角点的最大square
 // 则dp[i][j] = min(dp[i-1][j-1], min(dp[i-1][j], dp[i][j-1]))+1;
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

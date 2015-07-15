@@ -3,7 +3,7 @@
 // Time, Space:O(n*k*target)
 // dp[i][j][t] denotes the number of ways to select, from first i elements, j elements whose sum equals to t
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

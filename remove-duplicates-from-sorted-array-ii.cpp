@@ -2,7 +2,7 @@
 // http://www.lintcode.com/en/problem/remove-duplicates-from-sorted-array-ii/
 // 水
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

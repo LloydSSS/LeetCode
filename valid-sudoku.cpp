@@ -1,7 +1,7 @@
 // http://www.lintcode.com/zh-cn/problem/valid-sudoku/
 // 检查column，row，block
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

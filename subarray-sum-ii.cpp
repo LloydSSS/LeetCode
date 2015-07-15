@@ -2,7 +2,7 @@
 // a. Time:O(n2) Space:O(n) 先求出前缀和，然后枚举求两个前缀和的差
 // b. Time:O(nlogn) Space:O(n) 先求出前缀和，然后二分找出上界下界，前提是数组非负
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

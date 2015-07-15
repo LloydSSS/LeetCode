@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/kth-largest-element/
+// https://leetcode.com/problems/kth-largest-element-in-an-array/
 // 快速排序中的partition
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

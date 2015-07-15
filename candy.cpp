@@ -1,8 +1,9 @@
 // http://www.lintcode.com/zh-cn/problem/candy/
+// https://leetcode.com/problems/candy/
 // O(n), O(n)   a.从前向后遍历，只考虑每个人左侧的情况，如果rating比前一个要高则，得到的糖果数要比前一个人多1，否则从1开始；然后再从后往前遍历，同样的策略，取两者之间的最大值
 // O(n), O(1)   b.如果是递增序列则，给每个人的糖果依次加1，纪录最高值及总数；如果遇见相同rating，则糖果数从1开始记，最高值变成1；如果遇见递减序列，则纪录递减序列的长度，总数每次加上序列的长度，如果序列的长度大于之前的最高值，则最高值要+1，总数也要加1
 
-#include "lintcode.h"
+#include "lc.h"
 
 
 class Solution {

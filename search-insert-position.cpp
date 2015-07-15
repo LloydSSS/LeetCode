@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/search-insert-position/
 // 二分搜索，左闭右开
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
     /**

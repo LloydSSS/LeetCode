@@ -1,6 +1,7 @@
 // http://www.lintcode.com/en/problem/clone-graph/
+// https://leetcode.com/problems/clone-graph/
 // 深拷贝，使用hash_map纪录对应关系
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

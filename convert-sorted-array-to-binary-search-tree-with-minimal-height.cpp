@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/convert-sorted-array-to-binary-search-tree-with-minimal-height/
+// https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 // 分治，找到中心位置，然后递归调用
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/ffind-the-weak-connected-component-in-the-directed-graph
 // 并查集
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

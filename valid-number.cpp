@@ -2,7 +2,7 @@
 // a. 状态机
 // b. 条件判断
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

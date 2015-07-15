@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/house-robber/
+// https://leetcode.com/problems/house-robber/
 // dp[i]表示抢劫从0～i的house的最大收益
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

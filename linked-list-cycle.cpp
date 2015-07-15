@@ -1,6 +1,7 @@
 // http://www.lintcode.com/en/problem/linked-list-cycle/
+// https://leetcode.com/problems/linked-list-cycle/
 // 第一次面试。。。。
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

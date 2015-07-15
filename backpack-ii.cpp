@@ -3,7 +3,7 @@
 // 背包问题（价值和重量分开，把A[i]换成V[i]即可），滚动窗口可以将空间复杂度降到O(2m)，从后向前遍历可以将空间复杂度降到O(m)
 // dp[i,j] 用j的容量装前i件物品的最大价值
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

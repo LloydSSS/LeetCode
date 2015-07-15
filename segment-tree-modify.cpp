@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/segment-tree-query/
 // 线段树修改
 
-#include "lintcode.h"
+#include "lc.h"
 
 // Definition of SegmentTreeNode:
 class SegmentTreeNode {

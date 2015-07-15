@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/merge-sorted-array/
 // 从后向前merge
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

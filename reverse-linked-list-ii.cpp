@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/reverse-linked-list-ii/
 // 使用头插法比较简单
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

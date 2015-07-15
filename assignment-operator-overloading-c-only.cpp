@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/assignment-operator-overloading-c-only
 // copy and swap，深拷贝
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

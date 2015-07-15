@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/interval-sum-ii/
 // 线段树应用
 
-#include "lintcode.h"
+#include "lc.h"
 
 // Definition of SumSegmentTreeNode:
 class SumSegmentTreeNode {

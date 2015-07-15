@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/longest-consecutive-sequence/
+// https://leetcode.com/problems/longest-consecutive-sequence/
 // 将数字放在hash table里面，对每个数字进行左右扩展，寻找连续长度，并删掉访问过的数字
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

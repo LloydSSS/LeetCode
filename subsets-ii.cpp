@@ -4,7 +4,7 @@
 // 非递归，构造法，先构造0个元素的，再在这个基础上构造有第一个元素的subset，以此类推
 // 与没有重复元素不同的是：需要判断如果新元素和上一个元素相等，则只添加添加过上个元素的subset
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

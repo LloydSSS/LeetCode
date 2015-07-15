@@ -1,6 +1,6 @@
 // http://www.lintcode.com/en/problem/binary-tree-serialization/
-// 先序遍历的同时进行序列化。将空节点
-#include "lintcode.h"
+// 先序遍历的同时进行序列化。将空节点保留
+#include "lc.h"
 
 class Solution {
 public:

@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/add-two-numbers/#
 // 注意链表长度小于n的情况
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

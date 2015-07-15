@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/combinations/
+// https://leetcode.com/problems/combinations/
 // dfs
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

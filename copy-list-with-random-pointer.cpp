@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/copy-list-with-random-pointer/
+// https://leetcode.com/problems/copy-list-with-random-pointer/
 // 深拷贝，可以使用hash map纪录对应关系之后再拷贝random pointer，或者先把拷贝的节点放在原节点的后面，再遍历一遍进行分解
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

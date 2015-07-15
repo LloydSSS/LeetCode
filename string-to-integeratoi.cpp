@@ -1,8 +1,9 @@
 // String to Integer(atoi)
 // http://www.lintcode.com/en/problem/string-to-integeratoi/
+// https://leetcode.com/problems/string-to-integer-atoi/
 // 注意边界情况，一遍AC有难度
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

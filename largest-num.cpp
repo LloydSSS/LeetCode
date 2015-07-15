@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/largest-number/
+// https://leetcode.com/problems/largest-number/
 // 第一次面试。。。。
 
-#include "lintcode.h"
+#include "lc.h"
 
 bool cmp(string a, string b) {
 	return a+b > b+a;

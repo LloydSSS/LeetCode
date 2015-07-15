@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/first-bad-version/
 // 二分查找，左闭右闭
 
-#include "lintcode.h"
+#include "lc.h"
 
 class VersionControl {
     public:

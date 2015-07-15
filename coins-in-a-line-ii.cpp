@@ -2,7 +2,7 @@
 // For any index i, we can know the gap between the two players if the first player moves from it. Suppose the first player moves from i and it wins f[i](the gap). If the second player moves from it, we should consider f[i] as a loss of the first player.
 // http://techinpad.blogspot.com/2015/05/lintcode-coins-in-line-ii.html
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

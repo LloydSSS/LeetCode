@@ -1,7 +1,8 @@
 // http://www.lintcode.com/problem/binary-tree-level-order-traversal
+// https://leetcode.com/problems/binary-tree-level-order-traversal/
 // bfs
 // 纪录高度或者使用两个队列
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
     /**

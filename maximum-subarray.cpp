@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/maximum-subarray/
 // dp[i]纪录以i结尾的最大子数组和
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

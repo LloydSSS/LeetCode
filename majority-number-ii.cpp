@@ -3,7 +3,7 @@
 // https://leetcode.com/problems/majority-element-ii/
 // 三三抵消，注意最后要重新统计一次
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

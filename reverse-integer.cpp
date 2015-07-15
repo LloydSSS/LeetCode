@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/reverse-integer
+// https://leetcode.com/problems/reverse-integer/
 // 将结果设为long long 防止溢出
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

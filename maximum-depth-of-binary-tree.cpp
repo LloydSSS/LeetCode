@@ -1,6 +1,6 @@
 // http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

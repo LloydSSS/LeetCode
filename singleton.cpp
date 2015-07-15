@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/singleton/
 // 单例模式
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution
 {

@@ -1,8 +1,9 @@
 // http://www.lintcode.com/problem/binary-tree-zigzag-level-order-traversal-ii
+// https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
 // bfs
 // 纪录高度或者使用两个队列，在i的基础上reverse一下
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
     /**

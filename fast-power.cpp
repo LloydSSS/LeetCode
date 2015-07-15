@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/fast-power/
 // 分治,基础题
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

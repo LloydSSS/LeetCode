@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/simplify-path/
 // stack
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

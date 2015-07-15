@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/hash-function/
 // Magic Number is what?
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

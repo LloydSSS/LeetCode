@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/permutation-sequence/
 // 用两个链表分别存储，反而简单了
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

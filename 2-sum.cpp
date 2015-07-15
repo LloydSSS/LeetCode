@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/2-sum/
+// https://leetcode.com/problems/two-sum/
 // Time: O(n2), Space: O(1)
 // Brute force
 
@@ -8,7 +9,7 @@
 // Time, Space: O(n)
 // We could reduce the runtime complexity of looking up a value to O(1) using a hash map that maps a value to its index.
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

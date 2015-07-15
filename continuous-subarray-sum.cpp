@@ -2,7 +2,7 @@
 // dp, 纪录开始下标
 // 空间复杂度可以做到O(1)，只纪录当前的最大和
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

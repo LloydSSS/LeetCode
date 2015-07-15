@@ -1,11 +1,12 @@
-// http://www.lintcode.com/en/problem/binary-search-tree-iterator/#
+// http://www.lintcode.com/en/problem/binary-search-tree-iterator/
+// https://leetcode.com/problems/binary-search-tree-iterator/
 // Space:O(logn)
 // 使用栈先序遍历
 // Space:O(1)
 // threading，按照右中左的顺序进行递归线索化，最终指向第一个元素
 // 见morris遍历
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

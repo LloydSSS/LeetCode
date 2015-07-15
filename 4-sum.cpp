@@ -1,11 +1,12 @@
 // 4 Sum
 // http://www.lintcode.com/en/problem/4-sum/
+// https://leetcode.com/problems/4sum/
 // Time: O(n3), Space: O(1)
 // a. 排序，选定两个，左右逼近，注意去重(剪枝)
 // Time: O(n2), Space: O(n2)
 // b. 排序，使用unordered_map<int, vector<pair<int, int> > >缓存结果, 然后o(n2)遍历，注意下标不能重复，注意去重(Lintcode MLE, LeetCode TLE) 剪枝做的不好
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

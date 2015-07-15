@@ -2,7 +2,7 @@
 // O(nlogL)
 // 对长度进行二分搜索
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

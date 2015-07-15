@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/o1-check-power-of-2/
 // 注意非正数的处理
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

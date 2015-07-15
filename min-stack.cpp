@@ -2,7 +2,7 @@
 // 使用另外一个栈纪录最小值，如果新压栈的元素比栈顶元素小，则压栈
 // 弹栈时如果该元素等于最小栈的栈顶元素，则最小栈也弹栈
 
-#include "lintcode.h"
+#include "lc.h"
 
 class MinStack {
 public:

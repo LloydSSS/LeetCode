@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/valid-palindrome/
 // 左右指针遍历
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

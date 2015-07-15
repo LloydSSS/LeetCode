@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/fibonacci/
 // dp,基础题
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution{
 public:

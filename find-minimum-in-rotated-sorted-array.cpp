@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/find-minimum-in-rotated-sorted-array/
+// https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 // 二分查找, 左闭右闭
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/kth-smallest-number-in-sorted-matrix/#
 // 使用堆来维护，每次弹出当前最小值，然后将它的右边及下面元素加入堆，注意不要重复加入，使用set来纪录访问过的元素，不知道为什么使用unordered_set无法编译通过
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

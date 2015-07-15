@@ -5,7 +5,7 @@
 // 可以证明，当仅建立一个邮局时，最优解出现在中位数
 // dis[i][j] = dis[i][j-1] + A[j] - A[(i+j)/2]
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/count-and-say/
+// https://leetcode.com/problems/count-and-say/
 // 寻找连续字符出现的长度然后进行转换
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

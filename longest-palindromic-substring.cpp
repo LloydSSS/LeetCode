@@ -1,10 +1,11 @@
 // http://www.lintcode.com/en/problem/longest-palindromic-substring
+// https://leetcode.com/problems/longest-palindromic-substring/
 // Time O(n2)
 // dp
 // Time O(n)
 // manacher
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

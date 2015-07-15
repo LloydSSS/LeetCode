@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/update-bits/
 // 先设置mask，然后进行|操作，注意int 左移32位无定义
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

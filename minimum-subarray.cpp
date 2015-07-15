@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/minimum-subarray/
 // 同maximum subarray
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

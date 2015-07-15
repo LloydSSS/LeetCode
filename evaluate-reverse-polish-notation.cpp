@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/evaluate-reverse-polish-notation/
+// https://leetcode.com/problems/evaluate-reverse-polish-notation/
 // 栈，按照运算符，操作数、操作数顺序计算即可
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/word-ladder/
 // bfs，使用hash table纪录遍历过的词
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

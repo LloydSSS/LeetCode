@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/sort-list/
 // 归并排序
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

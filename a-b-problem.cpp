@@ -2,7 +2,7 @@
 // http://www.lintcode.com/en/problem/a-b-problem/
 // 位运算，一次性计算每一位的加和以及进位，当进位==0时停止计算
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

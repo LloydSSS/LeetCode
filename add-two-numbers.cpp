@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/add-two-numbers/#
+// https://leetcode.com/problems/add-two-numbers/
 // 注意是否可以使用l1 l2的节点
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

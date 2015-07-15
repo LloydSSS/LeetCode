@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/binary-tree-inorder-traversal/
+// https://leetcode.com/problems/binary-tree-inorder-traversal/
 // Time O(n), Space O(n)
 // 迭代版：栈
 /*
@@ -12,7 +13,7 @@
  */
 // Time O(n), Space O(1)
 // morris
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

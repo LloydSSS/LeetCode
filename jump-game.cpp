@@ -1,8 +1,9 @@
-// Jump Game II
-// http://www.lintcode.com/en/problem/jump-game-ii/
+// Jump Game
+// http://www.lintcode.com/en/problem/jump-game/
+// https://leetcode.com/problems/jump-game/
 // can_reach 纪录目前可以到达的最远处，
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

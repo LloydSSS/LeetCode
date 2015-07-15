@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/longest-increasing-continuous-subsequence-ii/
 // a. Time:O(mn) Space:O(mn) dfs＋记忆化搜索
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -1,8 +1,9 @@
 // http://www.lintcode.com/en/problem/balanced-binary-tree/
+// https://leetcode.com/problems/balanced-binary-tree/
 // Time:O(n)
 // 在递归计算节点高度的同时判断二叉树是否平衡，避免重复计算
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -2,7 +2,7 @@
 // a.排序，遍历最长边与最短边，二分查找中间边
 // b.three-pointers
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

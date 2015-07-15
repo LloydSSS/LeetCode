@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/rotate-list/
 // 首尾相连，然后再走len-k步, 断开
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

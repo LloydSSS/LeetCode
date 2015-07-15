@@ -2,7 +2,7 @@
 // 暴力匹配
 // kmp
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/fizz-buzz/
 // 水。。。
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

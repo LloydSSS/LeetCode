@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/find-peak-element/
+// https://leetcode.com/problems/find-peak-element/
 // 二分查找，左闭右闭
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

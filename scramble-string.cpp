@@ -6,7 +6,7 @@
 //   初始条件：dp[1][i][j] = (s1[i] == s2[j] ? true : false)
 //   dp[k][i][j] = ( dp[divlen][i][j] && dp[k-divlen][i+divlen][j+divlen] )  ||  ( dp[divlen][i][j+k-divlen] && dp[k-divlen][i+divlen][j] ) (divlen = 1,2,3...k-1, 它表示子串分割点到子串起始端的距离) ，只要一个子问题返回真，就可以停止计算
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

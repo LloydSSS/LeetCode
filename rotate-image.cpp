@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/rotate-image/
 // 中轴翻转，对角线翻转
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

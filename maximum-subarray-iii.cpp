@@ -7,7 +7,7 @@
 // 当我们计算完i，计算i+1时，sumBetween(ii+1, i)变成了sumBetween(ii+1, i+1)，实际上只多了一个数，所以我们可以不每次都计算一次。之前的最大的值，到新的还是原来所组合的最大值，只需要和新加的比一下就可以了，所以这个值我们从最左边向右边扫一遍一直维护是可行的，并且只需要维护一个变量local_max而不是数组。
 // http://hehejun.blogspot.com/2015/01/lintcodemaximum-subarray-iii.html
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

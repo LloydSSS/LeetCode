@@ -2,7 +2,7 @@
 // http://www.lintcode.com/en/problem/k-sum-ii/
 // dfs
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

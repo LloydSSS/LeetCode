@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/expression-tree-build/
 // 注意弹出计算时要使用while，因为有可能有+*+的情况
 
-#include "lintcode.h"
+#include "lc.h"
 
 // Definition of ExpressionTreeNode:
 class ExpressionTreeNode {

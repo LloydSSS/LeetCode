@@ -3,7 +3,7 @@
 // a. 使用一个数组统计每位出现的次数，模3等于1的位则为single num
 // b. 模拟三进制运算
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

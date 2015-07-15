@@ -3,7 +3,7 @@
 // a. 三次翻转
 // b. 直接计算偏移
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

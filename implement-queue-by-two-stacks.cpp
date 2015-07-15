@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/implement-queue-by-two-stacks/
+// https://leetcode.com/problems/implement-queue-using-stacks/
 // 水
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Queue {
 public:

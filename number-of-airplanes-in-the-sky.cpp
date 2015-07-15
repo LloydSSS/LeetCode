@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/number-of-airplanes-in-the-sky/
 // 将区间开始和结束放在一起排序，注意标记开始和结束，于是就转换成求括号序列的最大嵌套，使用一个计数器，遇见开始++，遇见结束--，过程中最大的计数就是答案，注意结束标记的权值要小于开始标记，这样排序时候就可以保证同一时间先降落再起飞
 
-#include "lintcode.h"
+#include "lc.h"
 
 bool cmp(const Interval &a, const Interval &b) {
     if (a.start == b.start)

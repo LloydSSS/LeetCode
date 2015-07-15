@@ -1,7 +1,8 @@
 // http://www.lintcode.com/zh-cn/problem/insert-interval/
+// https://leetcode.com/problems/insert-interval/
 // 水
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

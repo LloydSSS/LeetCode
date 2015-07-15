@@ -1,8 +1,9 @@
 // http://www.lintcode.com/en/problem/binary-tree-maximum-path-sum/
+// https://leetcode.com/problems/binary-tree-maximum-path-sum/
 // 分治，注意负值的处理
 // maxPathSumHelper返回以root为起点向下的最长路径和,则通过root的最大路径和为以两个孩子为起点的最大路径和的加和（负数不进行求和）
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

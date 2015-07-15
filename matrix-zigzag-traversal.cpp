@@ -1,7 +1,7 @@
 // http://www.lintcode.com/zh-cn/problem/matrix-zigzag-traversal/
 // 模拟
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

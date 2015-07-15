@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/sqrtx/
 // 二分查找
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

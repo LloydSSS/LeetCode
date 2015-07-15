@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/construct-binary-tree-from-inorder-and-postorder-traversal/
+// https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 // 1.寻找根节点的位置，2.对左右子树递归调用
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
     /**

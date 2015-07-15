@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/reorder-list/
 // 拆分，逆序，合并
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

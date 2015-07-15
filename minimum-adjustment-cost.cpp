@@ -3,7 +3,7 @@
 // for each dp[i][j], minimum cost = minimum cost dp[i-1][j-target ... j+target] + abs(A[i]-j)
 // 所以用三重循环，i，j，j-target...j+target
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

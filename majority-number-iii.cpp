@@ -2,7 +2,7 @@
 // http://www.lintcode.com/en/problem/majority-number-iii/
 // k抵消，注意最后要重新统计一次
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

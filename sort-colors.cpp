@@ -2,7 +2,7 @@
 // a. two-pass count
 // b. one-pass two-pointer
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution{
 public:

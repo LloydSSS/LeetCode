@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/the-smallest-difference/
 // a.排序，两个指针从头开始遍历，比较指针所指元素的difference，较小的指针后移
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

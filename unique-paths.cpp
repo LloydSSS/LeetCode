@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/unique-paths/
 // dp[i,j]表示到达(i,j)的路径数
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

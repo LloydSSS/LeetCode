@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/submatrix-sum/
 // a. Time:O(n2) Space:O(n) 先求出前缀和，然后枚举求两个前缀和的差
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

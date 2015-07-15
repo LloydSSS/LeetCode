@@ -1,7 +1,7 @@
 // http://www.lintcode.com/zh-cn/problem/merge-intervals/
 // 排序后依次合并
 
-#include "lintcode.h"
+#include "lc.h"
 
 bool cmp(const Interval &a, const Interval &b) {
     if (a.start == b.start)

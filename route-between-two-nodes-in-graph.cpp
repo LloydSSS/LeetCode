@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/route-between-two-nodes-in-graph
 // bfs
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

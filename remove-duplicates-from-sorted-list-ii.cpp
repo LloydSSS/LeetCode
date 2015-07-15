@@ -2,7 +2,7 @@
 // a.设置标志删除重复元素的第一个
 // b.跳过所有与当前值重复的元素
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution{
 public:

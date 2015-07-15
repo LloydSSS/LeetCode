@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/maximum-subarray-ii/
 // 计算出向前向后以i结尾的最大子数组和，然后双指针遍历数组得到结果，l表示r之前最大的向后子数组和
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

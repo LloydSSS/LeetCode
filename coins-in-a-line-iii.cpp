@@ -2,7 +2,7 @@
 // dp[i][j] means the max profit the first player can get from j to i
 // http://techinpad.blogspot.com/2015/05/lintcode-coins-in-line-iii.html
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

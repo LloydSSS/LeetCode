@@ -2,7 +2,7 @@
 // T2是T1的子树，则T1和T2相同，或者T2是T1孩子的子树
 // 判断两个节点是否是相同的树
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/remove-nth-node-from-end-of-list/
 // 快指针先走n步, 慢指针再走
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/climbing-stairs/
+// https://leetcode.com/problems/climbing-stairs/
 // 斐波那契数列，dp
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

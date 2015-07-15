@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/longest-words/
 // clear不会回收空间，想要回收空间：vector<T>().swap(x);
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

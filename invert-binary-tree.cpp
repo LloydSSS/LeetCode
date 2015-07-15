@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/invert-binary-tree/
+// https://leetcode.com/problems/invert-binary-tree/
 // 水
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

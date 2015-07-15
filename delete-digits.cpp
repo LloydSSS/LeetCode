@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/delete-digits/
 // 想让一个数字尽可能小，那么就要把小的数字尽量放到前面，如果前面有比它大的数字，那么就到把在它前面且比它大的数字都要删除掉，直到已经删掉k个数字。剩下的就是一些特殊情况与边界情况了，比如前置0要去掉，如果遍历一遍发现删除的数字还不足k个，那么就把最后的k-cnt个删除掉。
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

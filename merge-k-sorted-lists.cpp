@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/merge-k-sorted-lists/
 // 两两进行合并
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

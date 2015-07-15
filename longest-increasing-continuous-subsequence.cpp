@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/longest-increasing-continuous-subsequence/
 // dp[i]表示以i结尾的A[0~i]之间的最长上升子序列的长度
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

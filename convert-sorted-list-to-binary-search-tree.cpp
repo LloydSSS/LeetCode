@@ -1,6 +1,7 @@
 // http://www.lintcode.com/en/problem/convert-sorted-list-to-binary-search-tree/
+// https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
 // 找到中间位置之后递归
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

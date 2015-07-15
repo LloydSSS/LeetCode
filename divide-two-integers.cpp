@@ -1,6 +1,7 @@
 // http://www.lintcode.com/en/problem/divide-two-integers/
+// https://leetcode.com/problems/divide-two-integers/
 // 用加法模拟除法，可以使用倍增的手段加速
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -1,4 +1,5 @@
-// http://www.lintcode.com/en/problem/2-sum/
+// http://www.lintcode.com/en/problem/3-sum/
+// https://leetcode.com/problems/3sum/
 // Time: O(n3), Space: O(1)
 // Brute force
 
@@ -6,7 +7,7 @@
 // 排序，三个指针，固定第一个指针之后，另外两个指针左右夹逼，最后注意去重(lintcode 不知道为什么去重失效，需要先排一下序，或者使用set)
 // 同样的代码leetcode TLE, 在遍历过程中剪枝而不是最后去重可以AC
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

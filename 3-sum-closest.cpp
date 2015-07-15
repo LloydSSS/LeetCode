@@ -1,9 +1,9 @@
 // http://www.lintcode.com/en/problem/3-sum-closest/
-
+// https://leetcode.com/problems/3sum-closest/
 // Time: O(n2), Space: O(1)
 // 排序，三个指针，固定第一个指针之后，另外两个指针左右夹逼
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

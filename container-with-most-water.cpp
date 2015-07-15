@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/container-with-most-water/
+// https://leetcode.com/problems/container-with-most-water/
 // Two-pointer, 每次移动较小高度的指针
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

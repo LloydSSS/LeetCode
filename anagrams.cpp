@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/anagrams
+// https://leetcode.com/problems/anagrams/
 // hash_map key为排序后的结果，val是所有anagrams
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

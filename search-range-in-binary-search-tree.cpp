@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/search-range-in-binary-search-tree/
 // 使用栈来进行中序遍历
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

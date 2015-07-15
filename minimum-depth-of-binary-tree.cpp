@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/minimum-depth-of-binary-tree/
 // bfs,需要纪录节点高度或者使用两个队列
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

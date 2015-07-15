@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/product-of-array-exclude-itself/
 // 计算从左向右，以及从右向左的product
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

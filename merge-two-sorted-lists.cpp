@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/merge-two-sorted-lists/
 // 比较，合并
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

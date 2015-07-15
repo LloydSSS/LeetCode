@@ -1,7 +1,8 @@
 // http://www.lintcode.com/zh-cn/problem/insertion-sort-list/
+// https://leetcode.com/problems/insertion-sort-list/
 // 水
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

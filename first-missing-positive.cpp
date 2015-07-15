@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/first-missing-positive/
+// https://leetcode.com/problems/first-missing-positive/
 // 桶排序
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

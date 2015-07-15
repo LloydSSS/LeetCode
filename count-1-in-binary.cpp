@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/count-1-in-binary/
 // n&(n-1)表示会去掉最后一个bit为1的位
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -1,8 +1,9 @@
 // Linked List Cycle II
 // http://www.lintcode.com/en/problem/linked-list-cycle-ii/
+// https://leetcode.com/problems/linked-list-cycle-ii/
 // a. 2(a+x) = a+x+ml a---非环长度，x---进入环后的长度， m快指针转的圈数，l圈的长度
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

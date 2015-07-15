@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/add-binary/
+// https://leetcode.com/problems/add-binary/
 // 水
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

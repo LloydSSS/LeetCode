@@ -1,7 +1,7 @@
 // http://www.lintcode.com/zh-cn/problem/palindrome-partitioning/
 // dp+dfs
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

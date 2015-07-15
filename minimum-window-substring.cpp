@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/minimum-window-substring/
 // two-pointer hash table
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

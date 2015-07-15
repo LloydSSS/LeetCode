@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/edit-distance/
+// https://leetcode.com/problems/edit-distance/
 // dp[i,j] 表示word1[0~i], word2[0~j]之间的编辑距离
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

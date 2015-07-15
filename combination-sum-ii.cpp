@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/combination-sum-ii/
+// https://leetcode.com/problems/combination-sum-ii/
 // dfs+剪枝，注意重复值的处理
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

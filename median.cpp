@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/median/
 // 使用快速排序中的partition方法进行寻找
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

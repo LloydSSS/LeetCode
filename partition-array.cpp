@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/partition-array-by-odd-and-even/
 // partation
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

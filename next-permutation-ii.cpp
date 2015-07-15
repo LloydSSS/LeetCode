@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/next-permutation-ii/
 // 从后往前找第一个非降序的元素，然后再找后面降序序列中刚好比它大的元素，交换两个的位置，对这个降序序列进行逆序
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

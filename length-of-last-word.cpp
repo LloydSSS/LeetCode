@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/length-of-last-word/
+// https://leetcode.com/problems/length-of-last-word/
 // 水
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

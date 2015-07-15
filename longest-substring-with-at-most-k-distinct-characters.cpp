@@ -2,7 +2,7 @@
 // Time O(n)
 // 滑动窗口，用一个hash map纪录字符的使用数量及次数
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

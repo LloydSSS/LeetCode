@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/longest-common-prefix/
+// https://leetcode.com/problems/longest-common-prefix/
 // 枚举遍历
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:
@@ -31,6 +32,5 @@ int main(int argc, char const *argv[]) {
 	v.push_back(s);
 	v.push_back(t);
 	cout << sol.longestCommonPrefix(v) << endl;
-	/* code */
 	return 0;
 }

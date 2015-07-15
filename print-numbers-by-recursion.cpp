@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/print-numbers-by-recursion/
 // dfs
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

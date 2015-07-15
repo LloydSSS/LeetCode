@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/find-the-missing-number/
 // 桶排序
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

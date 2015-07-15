@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/binary-representation/
 // Time, Space O(n)
 // 整数部分和小数部分要分开处理stoi，stod，否则会因为精度问题出错
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/gas-station/
+// https://leetcode.com/problems/gas-station/
 // 贪心，sum表示总的汽油量减消耗量，local_sum表示从ans开始的结果，如果sum>=0则一定可以完成，起点可以是任意可以使local_sum>=0的开始节点
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

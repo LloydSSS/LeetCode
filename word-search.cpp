@@ -1,6 +1,7 @@
 // http://www.lintcode.com/en/problem/word-search/
 // a. dfs暴搜
-#include "lintcode.h"
+
+#include "lc.h"
 
 class Solution {
 public:

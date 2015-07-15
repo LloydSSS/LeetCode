@@ -1,8 +1,9 @@
 // http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock/
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 // Time:O(n), Space O(1)
 // 只交易一次：纪录最低价格，以及当前价格和最低价格的差的最大值
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

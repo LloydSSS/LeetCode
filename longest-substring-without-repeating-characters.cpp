@@ -1,8 +1,9 @@
 // http://www.lintcode.com/en/problem/longest-substring-without-repeating-characters
+// https://leetcode.com/problems/longest-substring-without-repeating-characters/
 // Time O(n)
 // 滑动窗口，用一个hash map纪录字符是否使用过
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

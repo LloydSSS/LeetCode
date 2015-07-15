@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/heapify/
 // 堆操作
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

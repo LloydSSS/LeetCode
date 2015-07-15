@@ -2,7 +2,7 @@
 // bfs搜索, 同时建立反向路径，再dfs搜索，寻找路径
 // http://www.tuicool.com/articles/eaQNNr
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

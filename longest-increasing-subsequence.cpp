@@ -4,7 +4,7 @@
 // Time O(nlogn)
 // minV[i]纪录长度为i的LIS的最小结尾元素
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

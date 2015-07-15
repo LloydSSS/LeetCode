@@ -1,8 +1,9 @@
 // Lowest Common Ancestor
 // http://www.lintcode.com/en/problem/lowest-common-ancestor/
+// https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 // a:从根节点开始找到两个节点的路径，然后在路径中找最后一个一样的节点
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

@@ -1,7 +1,8 @@
 // http://www.lintcode.com/zh-cn/problem/lru-cache/
+// https://leetcode.com/problems/lru-cache/
 // a. list+unordered_map
 
-#include "lintcode.h"
+#include "lc.h"
 
 class LRUCache{
 public:

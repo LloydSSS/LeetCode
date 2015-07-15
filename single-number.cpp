@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/single-number/
 // 相同数字异或为0
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

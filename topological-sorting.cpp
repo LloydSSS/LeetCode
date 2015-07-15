@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/topological-sorting/
 // bfs拓扑排序，记录每个点的入度，将入度为0的加入队列
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

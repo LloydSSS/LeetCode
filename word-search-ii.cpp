@@ -1,6 +1,6 @@
 // http://www.lintcode.com/en/problem/word-search-ii/
 // a. Trie+dfs暴搜
-#include "lintcode.h"
+#include "lc.h"
 
 class TrieNode {
 public:

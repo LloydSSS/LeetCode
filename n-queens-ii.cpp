@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/n-queens-ii/
 // 非递归版好麻烦
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

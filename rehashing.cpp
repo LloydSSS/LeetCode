@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/rehashing/
 // 拉链法
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

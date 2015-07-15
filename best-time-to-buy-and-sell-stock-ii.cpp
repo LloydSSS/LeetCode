@@ -1,8 +1,9 @@
 // http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock-ii/
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 // Time:O(n), Space O(1)
 // 不限制交易次数，计算每一天价格和前一天价格的差，累加整数
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

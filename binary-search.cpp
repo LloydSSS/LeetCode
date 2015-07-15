@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/binary-search/
 // Time, Space O(logn)
 // 二分搜索，左闭右闭，注意l+r可能溢出
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:

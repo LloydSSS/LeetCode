@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/delete-node-in-the-middle-of-singly-linked-list/
+// https://leetcode.com/problems/delete-node-in-a-linked-list/
 // 将该节点之后的所有节点val向前拷贝一个，删除最后一个节点
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
 public:
