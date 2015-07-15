@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/word-search-ii/
+// https://leetcode.com/problems/word-search-ii/
 // a. Trie+dfs暴搜
 #include "lc.h"
 

@@ -1,4 +1,5 @@
-// http://www.lintcode.com/zh-cn/problem/lru-cache/
+// http://www.lintcode.com/zh-cn/problem/maximum-gap/
+// https://leetcode.com/problems/maximum-gap/
 // a. 排序
 // b. 桶排序
 // Suppose there are N elements and they range from A to B.

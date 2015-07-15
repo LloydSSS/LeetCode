@@ -1,8 +1,9 @@
 // http://www.lintcode.com/en/problem/unique-binary-search-trees/
+// https://leetcode.com/problems/unique-binary-search-trees/
 // dp[i] 表示i个节点可以组成的bst的数量
 // dp[i] = ∑(dp[j]*dp[i-j-1])
 
-#include "lintcode"
+#include "lc.h"
 
 class Solution {
 public:

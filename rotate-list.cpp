@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/rotate-list/
+// https://leetcode.com/problems/rotate-list/
 // 首尾相连，然后再走len-k步, 断开
 
 #include "lc.h"

@@ -1,4 +1,5 @@
 // http://www.lintcode.com/zh-cn/problem/merge-intervals/
+// https://leetcode.com/problems/merge-intervals/
 // 排序后依次合并
 
 #include "lc.h"

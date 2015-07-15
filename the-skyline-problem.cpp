@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/the-skyline-problem/
 /*
 1. Sweep line with max-heap:
 Notice that "key points" are either the left or right edges of the buildings. Therefore, we first obtain both the edges of all the N buildings, and store the 2N edges in a sorted array. Maintain a max-heap of building heights while scanning through the edge array: If the current edge is a left edge, then add the height of its associated building to the max-heap; if the edge is a right one, remove the associated height from the heap. Then we take the top value of the heap (yi) as the maximum height at the current edge position (xi). Now (xi, yi) is a potential key point. If yi is the same as the height of the last key point in the result list, it means that this key point is not a REAL key point, but rather a horizontal continuation of the last point, so it should be discarded; otherwise, we add (xi,yi) to the result list because it is a real key point. Repeat this process until all the edges are checked.
@@ -11,22 +12,8 @@ Divide the list of buildings into two halves. Recursively get the skyline of bot
 
 Be warned, my friend, thou art about to do some serious coding should thou dare this path. Dauntlessly define thy classes and meticulously do thy math. Listen to the prophecy if thou must, but do not let thy own sword idle with rust. By the journey's end, may thy toil and sweat be duly repaid, and no more interviews shalt thou again be afraid.
 */
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+
+#include "lc.h"
 
 class Solution {
 public:

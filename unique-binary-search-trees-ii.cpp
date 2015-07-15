@@ -1,7 +1,8 @@
 // http://www.lintcode.com/en/problem/unique-binary-search-trees-ii/
+// https://leetcode.com/problems/unique-binary-search-trees-ii/
 // dfs, 对于1~n的二叉树，先确定根节点，然后获得所有的子树，之后组成二叉树
 
-#include "lintcode"
+#include "lc.h"
 
 class Solution {
 public:

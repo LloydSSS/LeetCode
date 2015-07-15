@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/number-of-islands/
+// https://leetcode.com/problems/number-of-islands/
 // BFS，水
 
 #include "lc.h"

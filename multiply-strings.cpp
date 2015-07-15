@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/minimum-window-substring/
+// https://leetcode.com/problems/minimum-window-substring/
 // two-pointer hash table
 
 #include "lc.h"

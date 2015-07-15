@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/summary-ranges/
+// 水
 
-#include "leetcode.h"
+#include "lc.h"
 
 class Solution {
 public:

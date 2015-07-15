@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/triangle/
+// https://leetcode.com/problems/triangle/
 // 最小路径和，dp基础题
 
 #include "lc.h"

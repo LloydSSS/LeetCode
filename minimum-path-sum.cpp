@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/minimum-path-sum/
+// https://leetcode.com/problems/minimum-path-sum/
 // dp[i][j]表示到(i, j)的最小路径和
 
 #include "lc.h"

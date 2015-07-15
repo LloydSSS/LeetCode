@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/scramble-string/
+// https://leetcode.com/problems/scramble-string/
 // 递归调用:太多重复子问题
 // Time o(n3)
 // 动态规划用数组来保存子问题，设dp[k][i][j]表示s2从j开始长度为k的子串是否可以由s1从i开始长度为k的子串转换而成，那么动态规划方程如下

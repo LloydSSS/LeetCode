@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/permutations/
+// https://leetcode.com/problems/permutations/
 // dfs
 
 #include "lc.h"

@@ -1,4 +1,5 @@
-// http://www.lintcode.com/en/problem/word-ladder/
+// http://www.lintcode.com/en/problem/word-ladder-ii/
+// https://leetcode.com/problems/word-ladder-ii/
 // bfs搜索, 同时建立反向路径，再dfs搜索，寻找路径
 // http://www.tuicool.com/articles/eaQNNr
 

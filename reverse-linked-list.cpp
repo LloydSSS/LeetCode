@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/reverse-linked-list/
+// https://leetcode.com/problems/reverse-linked-list/
 // 头插法或原地reverse
 
 #include "lc.h"

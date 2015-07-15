@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/single-number/
+// https://leetcode.com/problems/single-number/
 // 相同数字异或为0
 
 #include "lc.h"

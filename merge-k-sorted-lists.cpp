@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/merge-k-sorted-lists/
+// https://leetcode.com/problems/merge-k-sorted-lists/
 // 两两进行合并
 
 #include "lc.h"

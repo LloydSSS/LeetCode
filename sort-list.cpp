@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/sort-list/
+// https://leetcode.com/problems/sort-list/
 // 归并排序
 
 #include "lc.h"

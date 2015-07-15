@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/simplify-path/
+// https://leetcode.com/problems/simplify-path/
 // stack
 
 #include "lc.h"

@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/minimum-subarray/
+// https://leetcode.com/problems/minimum-size-subarray-sum/
 // 双指针遍历
 
 #include "lc.h"

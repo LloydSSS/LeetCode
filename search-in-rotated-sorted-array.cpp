@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/search-in-rotated-sorted-array/
+// https://leetcode.com/problems/search-in-rotated-sorted-array/
 // plan 1: 直接二分
 // plan 2: 先找到转折点，再二分
 

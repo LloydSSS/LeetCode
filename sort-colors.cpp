@@ -1,4 +1,5 @@
-// http://www.lintcode.com/zh-cn/problem/maximum-subarray-difference/
+// http://www.lintcode.com/en/problem/sort-colors
+// https://leetcode.com/problems/sort-colors/
 // a. two-pass count
 // b. one-pass two-pointer
 

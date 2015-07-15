@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/search-insert-position/
+// https://leetcode.com/problems/search-insert-position/
 // 二分搜索，左闭右开
 
 #include "lc.h"

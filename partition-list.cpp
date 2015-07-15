@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/partition-list/
+// https://leetcode.com/problems/partition-list/
 // 用两个链表分别存储，反而简单了
 
 #include "lc.h"

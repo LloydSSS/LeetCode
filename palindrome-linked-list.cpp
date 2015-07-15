@@ -1,15 +1,8 @@
 // https://leetcode.com/problems/palindrome-linked-list/
+// 将后半段翻转，然后比较
 
-#include "leetcode.h"
+#include "lc.h"
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {

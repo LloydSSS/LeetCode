@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/validate-binary-search-tree/
+// https://leetcode.com/problems/validate-binary-search-tree/
 // 中序遍历，保留前一个遍历元素的值，与当前值进行比较，应该小于当前值
 
 #include "lc.h"

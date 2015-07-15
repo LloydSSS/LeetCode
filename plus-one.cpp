@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/plus-one/
+// https://leetcode.com/problems/plus-one/
 // 注意进位
 
 #include "lc.h"

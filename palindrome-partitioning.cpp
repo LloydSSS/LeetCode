@@ -1,4 +1,5 @@
 // http://www.lintcode.com/zh-cn/problem/palindrome-partitioning/
+// https://leetcode.com/problems/palindrome-partitioning/
 // dp+dfs
 
 #include "lc.h"

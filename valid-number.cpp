@@ -1,4 +1,5 @@
 // http://www.lintcode.com/zh-cn/problem/valid-number/
+// https://leetcode.com/problems/valid-number/
 // a. 状态机
 // b. 条件判断
 

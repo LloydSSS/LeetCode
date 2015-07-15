@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/valid-parentheses/
+// https://leetcode.com/problems/valid-parentheses/
 // 使用栈来未匹配结果，如果来的是左括号，压栈，如果右括号：匹配，弹栈；不匹配,返回错误
 
 #include "lc.h"

@@ -1,4 +1,5 @@
 // http://www.lintcode.com/problem/maximum-product-subarray
+// https://leetcode.com/problems/maximum-product-subarray/
 // maxdp[i], mindp[i]纪录以i结尾的最大product和最小product
 
 #include "lc.h"

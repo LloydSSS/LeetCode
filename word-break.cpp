@@ -1,18 +1,8 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <stack>
-#include <map>
-#include <set>
-#include <unordered_set>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <cstring>
-using namespace std;
+// http://www.lintcode.com/en/problem/word-break/
+// https://leetcode.com/problems/word-break/
+// dp[i] == true means [0~i] can break
+
+#include "lc.h"
 
 class Solution {
 public:

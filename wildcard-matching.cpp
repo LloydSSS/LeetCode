@@ -1,5 +1,6 @@
 // Wildcard Matching
 // http://www.lintcode.com/en/problem/wildcard-matching/
+// https://leetcode.com/problems/wildcard-matching/
 // a. star 纪录上一个*的位置，ss纪录匹配*的s的位置，当发生不匹配的时候依次尝试ss+1, ss+2...是否匹配成功
 
 #include "lc.h"

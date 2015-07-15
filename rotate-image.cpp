@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/rotate-image/
+// https://leetcode.com/problems/rotate-image/
 // 中轴翻转，对角线翻转
 
 #include "lc.h"

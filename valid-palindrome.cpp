@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/valid-palindrome/
+// https://leetcode.com/problems/valid-palindrome/
 // 左右指针遍历
 
 #include "lc.h"

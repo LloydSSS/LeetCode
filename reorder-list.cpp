@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/reorder-list/
+// https://leetcode.com/problems/reorder-list/
 // 拆分，逆序，合并
 
 #include "lc.h"

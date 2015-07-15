@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/merge-two-sorted-lists/
+// https://leetcode.com/problems/merge-two-sorted-lists/
 // 比较，合并
 
 #include "lc.h"

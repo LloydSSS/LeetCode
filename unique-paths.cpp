@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/unique-paths/
+// https://leetcode.com/problems/unique-paths/
 // dp[i,j]表示到达(i,j)的路径数
 
 #include "lc.h"

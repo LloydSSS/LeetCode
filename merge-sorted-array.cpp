@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/merge-sorted-array/
+// https://leetcode.com/problems/merge-sorted-array/
 // 从后向前merge
 
 #include "lc.h"

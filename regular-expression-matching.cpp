@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/regular-expression-matching
+// https://leetcode.com/problems/regular-expression-matching/
 // 暴力搜索：如果p的下一个字符不是*,则必须朴素匹配；如果p的下一个字符是*，则使用*匹配0~'\0'个字符
 #include "lc.h"
 

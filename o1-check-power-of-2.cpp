@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/o1-check-power-of-2/
+// https://leetcode.com/problems/power-of-two/
 // 注意非正数的处理
 
 #include "lc.h"

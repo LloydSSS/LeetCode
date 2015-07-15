@@ -1,5 +1,6 @@
 // Reverse Words in a String
 // http://www.lintcode.com/en/problem/reverse-words-in-a-string/
+// https://leetcode.com/problems/reverse-words-in-a-string/
 // a. 先做预处理，去掉多余空格，然后整体翻转，再对每个单词翻转，使用了algorithm的函数reverse [first, end)
 
 #include "lc.h"

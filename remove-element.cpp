@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/remove-element/
+// https://leetcode.com/problems/remove-element/
 // 元素前移
 
 #include "lc.h"

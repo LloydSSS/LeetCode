@@ -1,5 +1,6 @@
 // Remove Duplicates from Sorted Array
 // http://www.lintcode.com/en/problem/remove-duplicates-from-sorted-array
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array
 // 水
 
 #include "lc.h"

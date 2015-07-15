@@ -1,4 +1,5 @@
 // http://www.lintcode.com/zh-cn/problem/valid-sudoku/
+// https://leetcode.com/problems/valid-sudoku/
 // 检查column，row，block
 
 #include "lc.h"

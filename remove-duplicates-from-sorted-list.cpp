@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/remove-duplicates-from-sorted-list
+// https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 // 重复值保留一个
 
 #include "lc.h"

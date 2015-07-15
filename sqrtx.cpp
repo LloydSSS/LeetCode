@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/sqrtx/
+// https://leetcode.com/problems/sqrtx/
 // 二分查找
 
 #include "lc.h"

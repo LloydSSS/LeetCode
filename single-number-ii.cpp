@@ -1,5 +1,6 @@
 // Single Number II
 // http://www.lintcode.com/en/problem/single-number-ii/
+// https://leetcode.com/problems/single-number-ii/
 // a. 使用一个数组统计每位出现的次数，模3等于1的位则为single num
 // b. 模拟三进制运算
 

@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/n-queens-ii/
+// https://leetcode.com/problems/n-queens/
 // 非递归版好麻烦
 
 #include "lc.h"
