@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/product-of-array-exclude-itself/
+// https://leetcode.com/problems/product-of-array-except-self/
 // 计算从左向右，以及从右向左的product
 
 #include "lc.h"
