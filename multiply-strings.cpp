@@ -1,54 +1,38 @@
-// http://www.lintcode.com/en/problem/minimum-window-substring/
-// https://leetcode.com/problems/minimum-window-substring/
-// two-pointer hash table
+// https://leetcode.com/problems/multiply-strings/
+// 注意负数，模拟乘法
 
 #include "lc.h"
 
 class Solution {
 public:
-    /**
-     * @param source: A string
-     * @param target: A string
-     * @return: A string denote the minimum window
-     *          Return "" if there is no such a string
-     */
-    string minWindow(string &source, string &target) {
-        if (target.size() == 0 || target.size() > source.size()) return "";
-        string ans;
-        vector<int> appeared(256, 0);
-        vector<int> expected(256, 0);
-        for (int i = 0; i < target.size(); ++i) {
-            expected[target[i]]++;
-        }
-
-        int left = 0, right = 0;
-        int min_width = INT_MAX;
-        int count = 0;
-        for (int right = 0; right < source.size(); ++right) {
-            char c = source[right];
-            if (expected[c] > 0) {
-                appeared[c]++;
-                if (appeared[c] <= expected[c])
-                    count++;
-            }
-
-            if (count == target.size()) {
-                for (; left <= right; ++left) {
-                    c = source[left];
-                    if (expected[c] == 0)
-                        continue;
-                    if (appeared[c] > expected[c]) {
-                        appeared[c]--;
-                    } else
-                        break;
-                }
-                if (right-left+1 < min_width) {
-                    min_width = right-left+1;
-                    ans = source.substr(left, min_width);
-                }
+    int num(char c) {
+        return c - '0';
+    }
+    char num2char(int n) {
+        return n + '0';
+    }
+    string multiply(string num1, string num2) {
+        int len = num1.size() + num2.size();
+        int *sum = new int[len];
+        memset(sum, 0, sizeof(int)*len);
+        reverse(num1.begin(), num1.end());
+        reverse(num2.begin(), num2.end());
+        for (int i = 0; i < num1.size(); ++i) {
+            for (int j = 0; j < num2.size(); ++j) {
+                sum[i+j] += num(num1[i]) * num(num2[j]);
             }
         }
-        return ans;
+        for (int i = 0; i < len-1; ++i) {
+            sum[i+1] += sum[i]/10;
+            sum[i] %= 10;
+        }
+        string sum_str;
+        for (int i = len - 1; i >= 0; --i) {
+            if (sum_str.size() == 0 && i != 0 && sum[i] == 0)
+                continue;
+            sum_str += num2char(sum[i]);
+        }
+        return sum_str;
     }
 };
 

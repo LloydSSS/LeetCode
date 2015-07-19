@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/rotate-array/
-// 将900，400等需要特殊处理的都放进字典里面
+// 两次reverse
 
 #include "lc.h"
 

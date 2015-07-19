@@ -1,5 +1,5 @@
 // http://www.lintcode.com/en/problem/submatrix-sum/
-// a. Time:O(n2) Space:O(n) 先求出前缀和，然后枚举求两个前缀和的差
+// a. Time:O(n3) Space:O(n) 先求出前缀和，然后枚举求两个前缀和的差
 
 #include "lc.h"
 
@@ -43,8 +43,8 @@ public:
 };
 
 int main(int argc, char const *argv[]) {
-	Solution sol;
+    Solution sol;
     vector<vector<int>> matrix = {{1,5,7},{3,7,-8},{4,-8,9}};
     auto ans = sol.submatrixSum(matrix);
-	return 0;
+    return 0;
 }

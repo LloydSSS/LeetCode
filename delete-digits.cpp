@@ -11,8 +11,8 @@ public:
      *@return: A string
      */
     string DeleteDigits(string A, int k) {
-    	string ans;
-    	int j = 0;
+        string ans;
+        int j = 0;
 		for (int i = 0; i < A.size(); ++i) {
 			if (j == 0 || ans[j-1] <= A[i] || k == 0) {
 				ans.push_back(A[i]);

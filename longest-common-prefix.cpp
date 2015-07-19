@@ -11,15 +11,15 @@ public:
      * @return: The longest common prefix
      */
     string longestCommonPrefix(vector<string> &strs) {
-    	if (strs.size() == 0) return string("");
-    	int len = 0;
-    	for (; len < strs[0].size(); ++len) {
-			for (int i = 1; i < strs.size(); ++i) {
-				if (len == strs[i].size() || strs[i][len] != strs[0][len])
-					return strs[0].substr(0, len);
-			}
-		}
-		return strs[0].substr(0, len);
+        if (strs.size() == 0) return string("");
+        int len = 0;
+        for (; len < strs[0].size(); ++len) {
+            for (int i = 1; i < strs.size(); ++i) {
+                if (len == strs[i].size() || strs[i][len] != strs[0][len])
+                    return strs[0].substr(0, len);
+            }
+        }
+        return strs[0].substr(0, len);
     }
 };
 
