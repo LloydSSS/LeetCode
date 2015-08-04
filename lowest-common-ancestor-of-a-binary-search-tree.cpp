@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
 // a:从根节点开始找到两个节点的路径，然后在路径中找最后一个一样的节点
+// b:LCA满足它的值在p,q之间，递归查找
 
 #include "lc.h"
 
@@ -37,6 +38,20 @@ public:
             return true;
         l.pop_back();
         return false;
+    }
+};
+
+class Solution2 {
+public:
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        if (p->val > q->val)
+            return lowestCommonAncestor(root, q, p);
+        if (p->val <= root->val && root->val <= q->val)
+            return root;
+        else if (root->val > q->val)
+            return lowestCommonAncestor(root->left, p, q);
+        else
+            return lowestCommonAncestor(root->right, p, q);
     }
 };
 

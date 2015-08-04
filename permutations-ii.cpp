@@ -34,6 +34,7 @@ public:
 
 int main(int argc, char const *argv[]) {
     Solution sol;
-
+    vector<int> v = {1, 1, 1, 2};
+    cout << sol.permuteUnique(v).size() << endl;
     return 0;
 }
