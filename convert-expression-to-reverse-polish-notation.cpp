@@ -1,4 +1,4 @@
-// http://www.lintcode.com/en/problem/convert-expression-to-polish-notation/
+// http://www.lintcode.com/en/problem/convert-expression-to-reverse-polish-notation/
 // 注意弹出计算时要使用while，因为有可能有+*+的情况
 
 #include "lc.h"

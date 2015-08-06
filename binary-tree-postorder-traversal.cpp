@@ -29,6 +29,7 @@ public:
         st.push(root);
         while (!st.empty()) {
             TreeNode *cur = st.top();
+            // 孩子已经遍历过了
             if ((cur->left == nullptr && cur->right == nullptr) ||
                 (pre != nullptr && (cur->left == pre || cur->right == pre))) {
                 ans.push_back(cur->val);

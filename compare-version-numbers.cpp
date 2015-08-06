@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/compare-version-numbers/
-// 使用一个hash table来计数。判断是否A的所有字母计数都大于B
 
 #include "lc.h"
 

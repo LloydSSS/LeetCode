@@ -35,25 +35,6 @@ public:
         }
         return ans;
     }
-
-    int findMaxSubarray(const vector<int>& A, vector<int> &max_i_j) {
-        int curr_sum = A[0];
-        int max_sum = curr_sum;
-        for (int i = 0, j = 1; j < A.size(); ++j) {
-            if (curr_sum < 0) {
-                i = j;
-                curr_sum = 0;
-            }
-
-            curr_sum += A[j];
-            if (curr_sum > max_sum) {
-                max_sum = curr_sum;
-                max_i_j[0] = i, max_i_j[1] = j;
-            }
-        }
-
-        return max_sum;
-    }
 };
 
 int main(int argc, char const *argv[]) {

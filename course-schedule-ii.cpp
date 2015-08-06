@@ -1,4 +1,4 @@
-// http://www.lintcode.com/en/problem/course-schedule/
+// http://www.lintcode.com/en/problem/course-schedule-ii/
 // 拓扑排序
 
 #include "lc.h"

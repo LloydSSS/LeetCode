@@ -109,5 +109,7 @@ public:
 };
 
 int main(int argc, char const *argv[]) {
+    Solution sol;
+    cout << sol.calculate("((1+2))") << endl;
     return 0;
 }
