@@ -71,8 +71,6 @@ public:
     }
 };
 
-
-
 int main(int argc, char const *argv[]) {
     Solution sol;
     unordered_set<string> dict;
