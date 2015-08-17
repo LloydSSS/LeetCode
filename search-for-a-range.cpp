@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/search-for-a-range/
 // 寻找上界下界, 寻找下界时候，如果使用左闭右闭，则必须m = (l+r+1) >> 1;否则需要特殊处理
 
-#include "lintcode.h"
+#include "lc.h"
 
 class Solution {
     /**
@@ -44,6 +44,46 @@ public:
         return result;
     }
 };
+
+class Solution2 {
+    /**
+     *@param A : an integer sorted array
+     *@param target :  an integer to be inserted
+     *return : a list of length 2, [index1, index2]
+     */
+public:
+    int lower_bound(vector<int> &A, int target) {
+        int l = 0, r = A.size();
+        while (l < r) {
+            int m = (l+r) >> 1;
+            if (A[m] < target)
+                l = m+1;
+            else
+                r = m;
+        }
+        return l;
+    }
+    int upper_bound(vector<int> &A, int target) {
+        int l = 0, r = A.size();
+        while (l < r) {
+            int m = (l+r) >> 1;
+            if (A[m] <= target)
+                l = m+1;
+            else
+                r = m;
+        }
+        return l;
+    }
+
+    vector<int> searchRange(vector<int> &A, int target) {
+        int lower = lower_bound(A, target);
+        int upper = upper_bound(A, target);
+        if (lower == A.size() || A[lower] != target)
+            return vector<int> {-1, -1};
+        return vector<int> {lower, upper-1};
+    }
+};
+
 
 int main(int argc, char const *argv[]) {
     Solution sol;

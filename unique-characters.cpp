@@ -1,7 +1,7 @@
 // http://www.lintcode.com/en/problem/unique-characters/
 // hash_table 记录每个字符是否出现过
 
-#include "lintcode"
+#include "lc.h"
 
 class Solution {
 public:

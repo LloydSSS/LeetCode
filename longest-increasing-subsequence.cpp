@@ -50,7 +50,7 @@ public:
             int m = (l+r) >> 1;
             if (array[m] < target)
                 l = m+1;
-            else if (array[m] >= target)
+            else
                 r = m;
         }
         return l;

@@ -16,7 +16,7 @@ public:
     vector<TreeNode *> dfs(int left, int right) {
         vector<TreeNode *> ans;
         if (left > right) {
-            ans.push_back(null_ptr);
+            ans.push_back(nullptr);
             return ans;
         }
         for (int i = left; i <= right; ++i) {

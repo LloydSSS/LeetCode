@@ -24,8 +24,6 @@ public:
     }
 };
 
-
-
 int main(int argc, char const *argv[]) {
 	Solution sol;
     int A[5] = {1, 2, 3};

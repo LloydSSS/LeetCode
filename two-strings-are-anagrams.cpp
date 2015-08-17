@@ -1,6 +1,8 @@
 // http://www.lintcode.com/en/problem/two-strings-are-anagrams/
 // 统计每个字符出现的次数，完全匹配则是anagrams
 
+#include "lc.h"
+
 class Solution {
 public:
     /**

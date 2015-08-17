@@ -116,5 +116,7 @@ int main(int argc, char const *argv[]) {
     string str = sol.serialize2(root);
     cout << str << endl;
     TreeNode *root2 = sol.deserialize(str);
+    cout << root2->val;
+    cout << root2->right->val;
     return 0;
 }

@@ -14,33 +14,18 @@ public:
         int l = 0, r = num.size()-1;
         while (l < r) {
             int m = (l+r) >> 1;
-            if (num[m] > num[r])
-                l = m+1;
-            else
+            if (num[m] < num[r])
                 r = m;
-            // if (num[l] > num[m])
-            //     r = m;
-            // else if (num[m] > num[r])
-            //     l = m+1;
-            // else
-            //     break;
+            else
+                l = m+1;
         }
         return num[l];
     }
 };
 
-
-
 int main(int argc, char const *argv[]) {
 	Solution sol;
-    vector<int> v;
-    v.push_back(6);
-    v.push_back(1);
-    v.push_back(2);
-    v.push_back(3);
-    v.push_back(4);
-    v.push_back(5);
-
+    vector<int> v = {6,1,2,3,4,5};
     cout << sol.findMin(v) << endl;
 	return 0;
 }

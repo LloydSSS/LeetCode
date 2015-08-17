@@ -1,6 +1,6 @@
 // http://www.lintcode.com/en/problem/find-peak-element/
 // https://leetcode.com/problems/find-peak-element/
-// 二分查找，左闭右闭
+// 二分查找，[)
 
 #include "lc.h"
 
@@ -11,25 +11,20 @@ public:
      * @return: return any of peek positions.
      */
     int findPeak(vector<int> A) {
-        int l = 0, r = A.size()-1;
+        int l = 0, r = A.size();
         while (l < r) {
             int m = (l+r) >> 1;
-            if (m == l)
-                return A[m]>A[m+1] ? m : m+1;;
 
-            if (A[m-1] < A[m] && A[m] > A[m+1])
-                return m;
+            if (A[m-1] < A[m] && A[m] > A[m+1]) return m;
 
             if (A[m-1] < A[m])
                 l = m;
             else
-                r = m-1;
+                r = m;
         }
         return l;
     }
 };
-
-
 
 int main(int argc, char const *argv[]) {
 	Solution sol;

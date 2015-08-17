@@ -1,6 +1,6 @@
 // http://www.lintcode.com/en/problem/post-office-problem/
 // 状态：dp[i][j]：前i个村庄建j个邮局的最小花费
-// 转移方程：d[i][j] = min(d[i][j], dp[k][j-1]+ dis[k+1][i]);
+// 转移方程：dp[i][j] = min(dp[i][j], dp[k][j-1]+ dis[k+1][i]);
 // dis[i][j]表示村庄i到村庄j之间建一个邮局的花费(花费为邮局到每个村庄的距离)
 // 可以证明，当仅建立一个邮局时，最优解出现在中位数
 // dis[i][j] = dis[i][j-1] + A[j] - A[(i+j)/2]

@@ -16,7 +16,7 @@ public:
         return backPack1D(m, A, V);
         if (m == 0) return 0;
         int n = A.size();
-        // vector<vector<int> > dp(n, vector<int>(m+1)); // dp[i,j] 用m的容量装前i件物品的最大价值
+        // vector<vector<int> > dp(n, vector<int>(m+1)); // dp[i,j] 用j的容量装前i件物品的最大价值
         vector<vector<int> > dp(2, vector<int>(m+1));
         bool cur = 0;
         for (int i = 0; i < n; ++i) {

@@ -1,6 +1,8 @@
 // http://www.lintcode.com/en/problem/ugly-number
 // 使用一个数组保留所有丑数，并且记录当前的最大值，三个指针分别代表3,5,7遍历过得元素，每次前进指针，直到元素*3,5,7大于最大值，比较三者的最小值，即是下一个丑数
 
+#include "lc.h"
+
 class Solution {
 public:
     /*

@@ -1,5 +1,6 @@
 // http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock-iv/
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+// http://www.cnblogs.com/EdwardLiu/p/4008162.html
 // k超过n/2就可以使用best-time-to-buy-and-sell-stock-ii的方法
 // Time O(kn), Space O(kn)
 // a. 类似背包问题 dp[i][j] 表示在0～j之间交易i次以内的最大收益，因此，dp[i][j]＝max(dp[i][j-1], prices[j] - prices[ttt] + dp[i-1][ttt]) ttt表示0～j之间dp[i-1][ttt]-prices[ttt]最大的坐标，因此用一个past_max来纪录即可，不用每次遍历
@@ -40,6 +41,7 @@ public:
         vector<int> release(k+1, 0);
         vector<int> hold(k+1, INT_MIN);
 
+        // i表示在前i天进行交易
         for (int i = 0; i < n; ++i) {
             for (int j = k; j > 0; --j) {
                 release[j] = max(release[j], hold[j]+prices[i]);
@@ -47,6 +49,43 @@ public:
             }
         }
         return release[k];
+    }
+
+    // global[i][j] = max(global[i-1][j], local[i][j]);
+    // 1. sell on day before day i; 2. sell on day i;
+    // local[i][j] = max(global[i-1][j-1]+max(diff[i],0), local[i-1][j]+diff[i]);
+    // 1. buy and sell on day i; 2. buy on day before day i and sell on day i, combine them in one trans;
+
+    int maxProfit2d(int k, vector<int> &prices) {
+        if (prices.size() <= 1 || k == 0) return 0;
+        int n = prices.size();
+        if (k > n/2) return maxProfitAll(prices);
+
+        vector<vector<int> > global(n, vector<int>(k+1)), local(n, vector<int>(k+1));
+        for (int i = 1; i < n; ++i) {
+            int diff = prices[i]-prices[i-1];
+            for (int j = 1; j <= k; ++j) {
+                local[i][j] = max(global[i-1][j-1]+max(diff,0), local[i-1][j]+diff);
+                global[i][j] = max(global[i-1][j], local[i][j]);
+            }
+        }
+        return global[n-1][k];
+    }
+
+    int maxProfit1d(int k, vector<int> &prices) {
+        if (prices.size() <= 1 || k == 0) return 0;
+        int n = prices.size();
+        if (k > n/2) return maxProfitAll(prices);
+
+        vector<int> global(k+1), local(k+1);
+        for (int i = 1; i < n; ++i) {
+            int diff = prices[i]-prices[i-1];
+            for (int j = k; j >= 1; --j) {
+                local[j] = max(global[j-1]+max(diff,0), local[j]+diff);
+                global[j] = max(global[j], local[j]);
+            }
+        }
+        return global[k];
     }
 
     int maxProfitAll(vector<int> &prices) {

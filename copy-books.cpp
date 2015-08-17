@@ -1,6 +1,8 @@
 // http://www.lintcode.com/en/problem/copy-books/#
-// dp[i][j] 表示前j个人抄写前i本书的最小时间。  
-// dp[i][j] = min(dp[i][j], max(dp[k][j-1], sum[i] - sum[k]));  
+// dp[i][j] 表示前j个人抄写前i本书的最小时间。
+// dp[i][j] = min(dp[i][j], max(dp[t][j-1], sum[i] - sum[t]));
+// global[i][j] = min(global[i][j-1], local[i][j]);
+// local[i][j] = min(local[t][j-1]+sum[t+1~i]);
 
 #include "lc.h"
 
@@ -29,8 +31,8 @@ public:
 
         for (int j = 2; j <= k; ++j) {
             for (int i = j; i <= n; ++i) {
-                for (int k = j-1; k < i; ++k)
-                    dp[i][j] = min(dp[i][j], max(dp[k][j-1], sum[i]-sum[k]));
+                for (int l = j-1; l < i; ++l)
+                    dp[i][j] = min(dp[i][j], max(dp[l][j-1], sum[i]-sum[l]));
             }
         }
 

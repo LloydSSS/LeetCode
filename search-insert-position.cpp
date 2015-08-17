@@ -14,9 +14,7 @@ public:
     int searchInsert(vector<int> &A, int target) {
         int l = 0, r = A.size();
         while (l < r) {
-            int m = (l+r) >> 1;
-            if (A[m] == target)
-                return m;
+            int m = l + (r-l)/2;
             if (A[m] < target)
                 l = m+1;
             else
@@ -25,7 +23,6 @@ public:
         return l;
     }
 };
-
 
 int main(int argc, char const *argv[]) {
 

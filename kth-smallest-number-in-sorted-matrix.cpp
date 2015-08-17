@@ -22,7 +22,7 @@ public:
         used.insert(make_pair(0, 0));
         while (k-- && !pq.empty()) {
             pair<int, pair<int,int> > ppr = pq.top();
-            cout << ppr.first << endl;
+            // cout << ppr.first << endl;
             pq.pop();
             if (k == 0)
                 return ppr.first;

@@ -32,7 +32,6 @@ public:
     }
 };
 
-
 int main(int argc, char const *argv[]) {
 	Solution sol;
     int a[] = {232,124,456};

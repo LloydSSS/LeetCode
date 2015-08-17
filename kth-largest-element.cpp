@@ -13,34 +13,36 @@ public:
      */
     int kthLargestElement(int k, vector<int> nums) {
         if (k > nums.size()) return -1;
-        srand(time(0));
-        int l = 0, r = nums.size()-1, pivot = 0;
-        while (true) {
-            pivot = l + rand()%(r-l+1);
-            pivot = partition(nums, l, r, pivot);
+        int n = nums.size();
+        int l = 0, r = n-1;
+        while (l <= r) {
+            int pivot = partition(nums, l, r);
             if (pivot == k-1)
-                break;
+                return nums[pivot];
             if (pivot > k-1)
                 r = pivot-1;
             else
                 l = pivot+1;
         }
-        return nums[pivot];
+        return -1;
     }
 
-    int partition(vector<int> &nums, int l, int r, int pivot) {
-        while (l < r) {
-            while (nums[l] < nums[pivot]) l++;
-            swap(nums[l], nums[pivot]);
-            pivot = l;
-            while (nums[r] > nums[pivot]) r--;
-            swap(nums[r], nums[pivot]);
-            pivot = r;
+    int partition(vector<int> &nums, int l, int r) {
+        srand(time(0));
+        int pivot = l + rand()%(r-l+1);
+        swap(nums[r], nums[pivot]);
+        pivot = l-1;
+        for (int i = l; i < r; ++i) {
+            if (nums[i] > nums[r]) {
+                ++pivot;
+                swap(nums[pivot], nums[i]);
+            }
         }
+        ++pivot;
+        swap(nums[pivot], nums[r]);
         return pivot;
     }
 };
-
 
 int main(int argc, char const *argv[]) {
 	Solution sol;

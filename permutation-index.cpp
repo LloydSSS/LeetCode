@@ -22,7 +22,6 @@ public:
                     swap(A[i], A[j]);
                 }
             }
-            cout << ans << endl;
             base *= A.size()-i;
         }
         return ans;

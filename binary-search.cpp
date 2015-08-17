@@ -1,6 +1,6 @@
 // http://www.lintcode.com/en/problem/binary-search/
 // Time, Space O(logn)
-// 二分搜索，左闭右闭，注意l+r可能溢出
+// 二分搜索，左闭右开，注意l+r可能溢出
 #include "lc.h"
 
 class Solution {
@@ -11,7 +11,7 @@ public:
      * @return: The first position of target. Position starts from 0.
      */
     int binarySearch(vector<int> &array, int target) {
-        int l = 0, r = array.size()-1;
+        int l = 0, r = array.size();
         while (l < r) {
             int m = l + (r-l)/2;
             if (array[m] < target)

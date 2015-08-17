@@ -19,37 +19,34 @@ public:
      */
     int kthSmallestElement(int k, vector<int> nums) {
         if (k > nums.size()) return -1;
-        srand(time(0));
         int n = nums.size();
-        int l = 0, r = n-1, pivot = 0;
-        while (true) {
-            pivot = l + rand()%(r-l+1);
-            pivot = partition(nums, l, r, nums[pivot]);
+        int l = 0, r = n-1;
+        while (l <= r) {
+            int pivot = partition(nums, l, r);
             if (pivot == k-1)
-                break;
+                return nums[pivot];
             if (pivot > k-1)
                 r = pivot-1;
             else
                 l = pivot+1;
         }
-        return nums[pivot];
+        return -1;
     }
 
-    // int partition(vector<int> &nums, int l, int r, int pivot) {
-    //     while (l < r) {
-    //         while (l < pivot && nums[l] <= nums[pivot]) l++;
-    //         swap(nums[l], nums[pivot]);
-    //         pivot = l;
-    //         while (pivot < r && nums[r] > nums[pivot]) r--;
-    //         swap(nums[r], nums[pivot]);
-    //         pivot = r;
-    //     }
-    //     return pivot;
-    // }
-    int partition(vector<int> &nums, int left, int right, int pivot) {
-        for (int i = left; i < right; ++i) {
-            if (nums[i] < pivot)
+    int partition(vector<int> &nums, int l, int r) {
+        srand(time(0));
+        int pivot = l + rand()%(r-l+1);
+        swap(nums[r], nums[pivot]);
+        pivot = l-1;
+        for (int i = l; i < r; ++i) {
+            if (nums[i] < nums[r]) {
+                ++pivot;
+                swap(nums[pivot], nums[i]);
+            }
         }
+        ++pivot;
+        swap(nums[pivot], nums[r]);
+        return pivot;
     }
 };
 
