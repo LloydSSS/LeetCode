@@ -1,4 +1,5 @@
 // http://www.lintcode.com/en/problem/find-the-missing-number/
+// https://leetcode.com/problems/missing-number/
 // 桶排序
 
 #include "lc.h"

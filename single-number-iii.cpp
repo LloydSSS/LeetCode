@@ -1,5 +1,6 @@
-// Single Number II
-// http://www.lintcode.com/en/problem/single-number-ii/
+// Single Number III
+// http://www.lintcode.com/en/problem/single-number-iii/
+// https://leetcode.com/problems/single-number-iii/
 // a. xsum = a^b，根据xsum中不为0的一位将A分为两部分，a,b分别在两部分
 
 #include "lc.h"
